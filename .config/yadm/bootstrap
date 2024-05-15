@@ -4,17 +4,29 @@ system_type=$(uname -s)
 
 if [ "$system_type" = "Darwin" ]; then
 
-  # install homebrew if it's missing
+  # Install Homebrew if it's missing
   if ! command -v brew >/dev/null 2>&1; then
-    echo "Installing homebrew"
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+    echo "Installing Homebrew"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
   fi
 
-  /bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  # Install oh-my-zsh if it isn't already present
+  if [ ! -d "$HOME/.oh-my-zsh" ]; then
+    echo "Installing oh-my-zsh"
+    /bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  fi
 
+  # Update Homebrew bundle if Brewfile exists
   if [ -f "$HOME/.Brewfile" ]; then
-    echo "Updating homebrew bundle"
+    echo "Updating Homebrew bundle"
     brew bundle --global
   fi
 
+  # Clone kickstart.nvim if it isn't already present
+  if [ ! -d "${XDG_CONFIG_HOME:-$HOME/.config}/nvim" ]; then
+    echo "Cloning kickstart.nvim"
+    /usr/bin/git clone https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}/nvim"
+  fi
+
 fi
+
