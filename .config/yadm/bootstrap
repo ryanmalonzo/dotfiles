@@ -25,7 +25,7 @@ if [ "$system_type" = "Darwin" ]; then
   # Clone kickstart.nvim if it isn't already present
   if [ ! -d "${XDG_CONFIG_HOME:-$HOME/.config}/nvim" ]; then
     echo "Cloning kickstart.nvim"
-    /usr/bin/git clone https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}/nvim"
+    /usr/bin/git clone https://github.com/ryanmalonzo/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}/nvim"
   fi
 
 fi
