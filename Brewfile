@@ -14,3 +14,6 @@ brew "font-hack-nerd-font"
 brew "neovim"
 brew "unzip"
 brew "ripgrep"
+
+# lazygit
+brew "jesseduffield/lazygit/lazygit"
