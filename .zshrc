@@ -101,6 +101,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vim=nvim
 alias gbclean="git branch --merged | grep -v '^* master$' | grep -v '^  master$' | grep -v '^* main$' | grep -v '^  main$' | xargs git branch -d"
+alias dcu="docker compose up -d"
+alias dcd="docker compose down"
 
 path+=('/opt/nvim-linux64/bin')
 path+=('/home/ren/.local/bin')
