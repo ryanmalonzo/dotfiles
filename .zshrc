@@ -103,6 +103,8 @@ alias vim=nvim
 alias gbclean="git branch --merged | grep -v '^* master$' | grep -v '^  master$' | grep -v '^* main$' | grep -v '^  main$' | xargs git branch -d"
 alias dcu="docker compose up -d"
 alias dcd="docker compose down"
+alias dce="docker compose exec"
+alias dcl="docker compose logs"
 
 path+=('/opt/nvim-linux64/bin')
 path+=('/home/ren/.local/bin')
