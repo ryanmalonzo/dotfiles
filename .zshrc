@@ -105,6 +105,7 @@ alias dcu="docker compose up -d"
 alias dcd="docker compose down"
 alias dce="docker compose exec"
 alias dcl="docker compose logs"
+alias dcb="docker compose build"
 
 path+=('/opt/nvim-linux64/bin')
 path+=('/home/ren/.local/bin')
