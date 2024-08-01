@@ -9,6 +9,9 @@ return {
   { import = "astrocommunity.editing-support.conform-nvim" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
   { import = "astrocommunity.colorscheme.catppuccin" },
+  { import = "astrocommunity.completion.copilot-lua-cmp" },
+  { import = "astrocommunity.motion.leap-nvim" },
+  { import = "astrocommunity.motion.mini-ai" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.python" },
   -- import/override with your plugins folder
