@@ -52,6 +52,9 @@ fi
 # Change default `ls` colors to look good in light mode
 export LSCOLORS=exfxcxdxbxegedabagacad
 
+# Local bin
+export PATH=$HOME/.local/bin:$PATH
+
 alias vim=nvim
 alias vimzsh="nvim ~/.zshrc"
 alias srczsh="source ~/.zshrc"
