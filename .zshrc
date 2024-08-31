@@ -58,6 +58,7 @@ export PATH=$HOME/.local/bin:$PATH
 alias vim=nvim
 alias vimzsh="nvim ~/.zshrc"
 alias srczsh="source ~/.zshrc"
+alias brewupdate="brew update && brew upgrade"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
