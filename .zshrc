@@ -34,7 +34,6 @@ zstyle ':omz:update' frequency 13
 # Caution: this setting can cause issues with multiline prompts in zsh < 5.7.1 (see #5765)
 # COMPLETION_WAITING_DOTS="true"
 
-zstyle ':omz:plugins:nvm' lazy yes
 plugins=(git git-auto-fetch z zsh-autosuggestions zsh-syntax-highlighting evalcache)
 
 source $ZSH/oh-my-zsh.sh
