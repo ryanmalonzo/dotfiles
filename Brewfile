@@ -6,6 +6,10 @@ brew "zsh-autosuggestions"
 brew "node"
 brew "nvm"
 
+# python
+brew "pyenv"
+brew "pyenv-virtualenv"
+
 # nerd font
 brew "font-jetbrains-mono-nerd-font"
 

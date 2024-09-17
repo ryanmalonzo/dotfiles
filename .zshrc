@@ -69,6 +69,8 @@ export NVM_DIR="$HOME/.nvm"
 
 # pyenv
 eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 # Launch tmux on startup if it is installed
 if [ "$TMUX" = "" ]; then tmux; fi
