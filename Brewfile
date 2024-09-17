@@ -9,6 +9,7 @@ brew "nvm"
 # python
 brew "pyenv"
 brew "pyenv-virtualenv"
+brew "direnv"
 
 # nerd font
 brew "font-jetbrains-mono-nerd-font"

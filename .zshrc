@@ -34,7 +34,8 @@ zstyle ':omz:update' frequency 13
 # Caution: this setting can cause issues with multiline prompts in zsh < 5.7.1 (see #5765)
 # COMPLETION_WAITING_DOTS="true"
 
-plugins=(git git-auto-fetch z zsh-autosuggestions zsh-syntax-highlighting)
+zstyle ':omz:plugins:nvm' lazy yes
+plugins=(git git-auto-fetch z zsh-autosuggestions zsh-syntax-highlighting evalcache)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -67,10 +68,13 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
-# pyenv
-eval "$(pyenv init --path)"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+# python / pyenv
+_evalcache pyenv init -
+_evalcache pyenv virtualenv-init -
+
+# Environment variables
+eval "$(direnv hook zsh)"
+_evalcache direnv hook zsh
 
 # Launch tmux on startup if it is installed
 if [ "$TMUX" = "" ]; then tmux; fi
