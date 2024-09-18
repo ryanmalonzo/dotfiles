@@ -72,7 +72,6 @@ _evalcache pyenv init -
 _evalcache pyenv virtualenv-init -
 
 # Environment variables
-eval "$(direnv hook zsh)"
 _evalcache direnv hook zsh
 
 # Launch tmux on startup if it is installed
