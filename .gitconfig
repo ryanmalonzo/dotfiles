@@ -1,0 +1,10 @@
+[user]
+	email = 64932650+ryanmalonzo@users.noreply.github.com
+	name = Ryan Malonzo
+	signingkey = /Users/ren/.ssh/github.pub
+[init]
+	defaultBranch = main
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
