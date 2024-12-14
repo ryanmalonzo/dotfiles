@@ -1,7 +1,11 @@
-# general stuff
+# general
 brew "lazygit"
 brew "tmux"
 brew "wget"
+
+# casks
+cask "raycast"
+cask "rectangle"
 
 # docker
 brew "docker"
@@ -29,7 +33,7 @@ brew "luarocks"
 brew "unzip"
 brew "ripgrep"
 
-# nerd font
+# nerd fonts
 cask "font-jetbrains-mono-nerd-font"
 cask "font-ibm-plex-mono"
 
