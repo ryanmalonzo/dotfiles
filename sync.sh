@@ -8,6 +8,7 @@ CONFIGS=(
     ~/.tmux.conf
     ~/Brewfile
     ~/iterm2.json
+    ~/raycast.rayconfig
 )
 
 DOTFILES_DIR=~/dotfiles
