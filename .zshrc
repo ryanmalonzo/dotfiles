@@ -43,7 +43,8 @@ alias dcu="docker compose up -d"
 alias dots="~/dotfiles/sync.sh"
 alias srczsh="source ~/.zshrc"
 alias vim=nvim
-alias vimzsh="nvim ~/.zshrc"
+alias vimconfig="nvim ~/.config/nvim"
+alias zshconfig="nvim ~/.zshrc"
 alias updatereqs="pipreqs --encoding utf-8 --force ."
 
 # iterm2

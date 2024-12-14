@@ -2,10 +2,11 @@
 
 CONFIGS=(
     ~/.config/nvim
+    ~/.editorconfig
     ~/.gitconfig
     ~/.oh-my-zsh/custom/plugins
-    ~/.zshrc
     ~/.tmux.conf
+    ~/.zshrc
     ~/Brewfile
     ~/iterm2.json
     ~/raycast.rayconfig

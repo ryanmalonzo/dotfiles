@@ -20,12 +20,13 @@ brew "zsh-autosuggestions"
 brew "pyenv"
 brew "pyenv-virtualenv"
 brew "direnv"
-brew "black"
-brew "isort"
 
 # node
 brew "node"
 brew "fnm"
+
+# lua
+brew "lua-language-server"
 
 # neovim
 brew "neovim"
@@ -40,3 +41,8 @@ cask "font-ibm-plex-mono"
 # file viewers
 brew "jless"
 brew "csview"
+
+# formatters
+brew "black"
+brew "isort"
+brew "stylua"
