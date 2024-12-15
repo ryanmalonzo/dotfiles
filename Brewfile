@@ -1,8 +1,3 @@
-# general
-brew "lazygit"
-brew "tmux"
-brew "wget"
-
 # casks
 cask "raycast"
 cask "rectangle"
@@ -12,24 +7,30 @@ brew "docker"
 brew "docker-compose""
 brew "colima"
 
-# oh-my-zsh
-brew "zsh-syntax-highlighting"
-brew "zsh-autosuggestions"
+# file viewers
+brew "jless"
+brew "csview"
 
-# python
-brew "pyenv"
-brew "pyenv-virtualenv"
-brew "direnv"
+# formatters
+brew "black"
+brew "isort"
+brew "stylua"
+brew "prettierd"
 
-# node
-brew "node"
-brew "fnm"
+# general
+brew "lazygit"
+brew "tmux"
+brew "wget"
 
 # lua
 brew "lua-language-server"
 
 # markdown
 brew "marksman"
+
+# node
+brew "node"
+brew "fnm"
 
 # neovim
 brew "neovim"
@@ -41,12 +42,14 @@ brew "ripgrep"
 cask "font-jetbrains-mono-nerd-font"
 cask "font-blex-mono-nerd-font"
 
-# file viewers
-brew "jless"
-brew "csview"
+# oh-my-zsh
+brew "zsh-syntax-highlighting"
+brew "zsh-autosuggestions"
 
-# formatters
-brew "black"
-brew "isort"
-brew "stylua"
-brew "prettierd"
+# python
+brew "pyenv"
+brew "pyenv-virtualenv"
+brew "direnv"
+
+# rust
+brew "rust"
