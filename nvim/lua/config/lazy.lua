@@ -27,7 +27,7 @@ require("lazy").setup {
     { import = "plugins" },
   },
   -- automatically check for plugin updates
-  checker = { enabled = true },
+  checker = { enabled = true, notify = false },
   performance = {
     reset_packpath = true, -- reset the package path to improve startup time
     rtp = {
