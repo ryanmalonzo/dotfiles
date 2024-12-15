@@ -28,6 +28,9 @@ brew "fnm"
 # lua
 brew "lua-language-server"
 
+# markdown
+brew "marksman"
+
 # neovim
 brew "neovim"
 brew "luarocks"
@@ -46,3 +49,4 @@ brew "csview"
 brew "black"
 brew "isort"
 brew "stylua"
+brew "prettierd"

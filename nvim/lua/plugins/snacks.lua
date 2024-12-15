@@ -7,6 +7,7 @@ return {
       indent = { enabled = true },
       quickfile = { enabled = true },
     },
+    event = "VeryLazy",
     keys = {
       { "<leader>lg", function() Snacks.lazygit() end, desc = "Lazygit" },
     },

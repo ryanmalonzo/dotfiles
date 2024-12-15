@@ -13,10 +13,15 @@ return {
           },
         },
       },
+      "saghen/blink.cmp",
     },
     config = function()
-      require("lspconfig").basedpyright.setup {}
-      require("lspconfig").lua_ls.setup {}
+      local capabilities = require("blink.cmp").get_lsp_capabilities()
+      local lspconfig = require "lspconfig"
+
+      lspconfig["lua_ls"].setup { capabilities = capabilities }
+      lspconfig["marksman"].setup { capabilities = capabilities }
+      lspconfig["basedpyright"].setup { capabilities = capabilities }
     end,
   },
 }

@@ -6,7 +6,7 @@ return {
     keys = {
       {
         -- Customize or remove this keymap to your liking
-        "<leader>f",
+        "<leader>fb",
         function() require("conform").format { async = true } end,
         mode = "",
         desc = "Format buffer",
@@ -14,16 +14,23 @@ return {
     },
     config = function()
       require("conform").setup {
+        formatters = {
+          isort = {
+            preprend_args = { "--profile", "black" },
+          },
+        },
+
         formatters_by_ft = {
-          lua = { "stylua" },
-          python = { "isort", "black" },
           javascript = { "prettierd", "prettier", stop_after_first = true },
+          lua = { "stylua" },
+          markdown = { "prettierd", "prettier", stop_after_first = true },
+          python = { "isort", "black" },
         },
 
         format_on_save = function(bufnr)
           -- Disable with a global or buffer-local variable
           if vim.g.disable_autoformat or vim.b[bufnr].disable_autoformat then return end
-          return { timeout_ms = 500, lsp_format = "fallback" }
+          return { timeout_ms = 2500, lsp_format = "fallback" }
         end,
       }
 
