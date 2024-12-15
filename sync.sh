@@ -10,6 +10,7 @@ CONFIGS=(
     ~/Brewfile
     ~/iterm2.json
     ~/raycast.rayconfig
+    ~/.wezterm.lua
 )
 
 DOTFILES_DIR=~/dotfiles

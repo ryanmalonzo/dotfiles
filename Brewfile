@@ -21,6 +21,7 @@ brew "prettierd"
 brew "lazygit"
 brew "tmux"
 brew "tree"
+brew "wezterm"
 brew "wget"
 
 # lua
