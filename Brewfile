@@ -36,7 +36,7 @@ brew "ripgrep"
 
 # nerd fonts
 cask "font-jetbrains-mono-nerd-font"
-cask "font-ibm-plex-mono"
+cask "font-blex-mono-nerd-font"
 
 # file viewers
 brew "jless"
