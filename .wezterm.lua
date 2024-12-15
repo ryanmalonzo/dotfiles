@@ -97,7 +97,7 @@ config.tab_bar_at_bottom = true
 wezterm.on("update-status", function(window, pane)
   -- Workspace name
   local stat = window:active_workspace()
-  local stat_color = "#f7768e"
+  local stat_color = "#87ceeb"
 
   -- Current working directory
   local basename = function(s)

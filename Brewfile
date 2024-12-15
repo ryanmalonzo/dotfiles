@@ -1,10 +1,11 @@
 # casks
 cask "raycast"
 cask "rectangle"
+cask "wezterm"
 
 # docker
 brew "docker"
-brew "docker-compose""
+brew "docker-compose"
 brew "colima"
 
 # file viewers
@@ -21,7 +22,6 @@ brew "prettierd"
 brew "lazygit"
 brew "tmux"
 brew "tree"
-brew "wezterm"
 brew "wget"
 
 # lua
@@ -49,6 +49,7 @@ brew "zsh-syntax-highlighting"
 brew "zsh-autosuggestions"
 
 # python
+brew "basedpyright"
 brew "pyenv"
 brew "pyenv-virtualenv"
 brew "direnv"
