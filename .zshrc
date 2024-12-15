@@ -1,6 +1,7 @@
 export ZSH=$HOME/.oh-my-zsh
 
-ZSH_THEME="robbyrussell"
+# ZSH_THEME="robbyrussell"
+ZSH_THEME="awesomepanda"
 
 # CASE_SENSITIVE="true"
 # HYPHEN_INSENSITIVE="true"

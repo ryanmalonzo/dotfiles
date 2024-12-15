@@ -4,7 +4,7 @@ local act = wezterm.action
 local config = wezterm.config_builder()
 
 -- General
-config.color_scheme = "Belge"
+config.color_scheme = "Belge (terminal.sexy)"
 config.colors = {
   tab_bar = {
     background = "#000000",
@@ -40,7 +40,19 @@ config.keys = {
   { key = "j", mods = "LEADER", action = act.ActivatePaneDirection("Down") },
   { key = "k", mods = "LEADER", action = act.ActivatePaneDirection("Up") },
   { key = "l", mods = "LEADER", action = act.ActivatePaneDirection("Right") },
-  { key = "d", mods = "CTRL", action = act.CloseCurrentPane({ confirm = true }) },
+  -- { key = "d", mods = "CTRL", action = act.CloseCurrentPane({ confirm = true }) },
+  {
+    key = "d",
+    mods = "CTRL",
+    action = wezterm.action_callback(function(window, pane)
+      local proc_name = pane:get_foreground_process_name()
+      if proc_name:find("vim") then
+        window:perform_action({ SendKey = { key = "d", mods = "CTRL" } }, pane)
+      else
+        window:perform_action(act.CloseCurrentPane({ confirm = true }), pane)
+      end
+    end),
+  },
   {
     key = "r",
     mods = "LEADER",
