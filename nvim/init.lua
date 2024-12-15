@@ -1,14 +1,12 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
-require "config.lazy"
-
 vim.opt.swapfile = false
 
-vim.opt.expandtab = true
 vim.opt.smartindent = true
-vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
 vim.opt.tabstop = 4
+
 vim.opt.number = true
 vim.opt.relativenumber = true
 
@@ -63,3 +61,5 @@ vim.keymap.set("n", "yc", "yy<cmd>normal gcc<CR>p")
 vim.keymap.set("n", "grn", vim.lsp.buf.rename)
 vim.keymap.set("n", "gra", vim.lsp.buf.code_action)
 vim.keymap.set("n", "grr", vim.lsp.buf.references)
+
+require "config.lazy"

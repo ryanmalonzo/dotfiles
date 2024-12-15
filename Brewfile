@@ -20,6 +20,7 @@ brew "prettierd"
 # general
 brew "lazygit"
 brew "tmux"
+brew "tree"
 brew "wget"
 
 # lua

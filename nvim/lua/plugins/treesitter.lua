@@ -1,12 +1,16 @@
 return {
   {
     "nvim-treesitter/nvim-treesitter",
+    enabled = true,
     build = ":TSUpdate",
     config = function()
       require("nvim-treesitter.configs").setup {
         ensure_installed = { "python", "lua", "vim", "vimdoc", "query", "markdown", "markdown_inline" },
         sync_install = false,
         auto_install = false,
+        indent = {
+          enable = false,
+        },
         highlight = {
           enable = true,
           disable = function(lang, buf)
@@ -14,7 +18,8 @@ return {
             local ok, stats = pcall(vim.loop.fs_stat, vim.api.nvim_buf_get_name(buf))
             if ok and stats and stats.size > max_filesize then return true end
           end,
-          additional_vim_regex_highlighting = false,
+          -- Indentation can break without this
+          additional_vim_regex_highlighting = true,
         },
       }
     end,
