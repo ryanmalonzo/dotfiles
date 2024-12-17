@@ -1,7 +1,5 @@
-
 #!/bin/zsh
 
-# List of configuration files and directories to sync
 CONFIGS=(
     ~/.config/nvim
     ~/.editorconfig
@@ -15,10 +13,8 @@ CONFIGS=(
     ~/.wezterm.lua
 )
 
-# Path to the dotfiles directory
 DOTFILES_DIR=~/dotfiles
 
-# Function to back up local configs to the dotfiles repository
 sync_configs() {
     for config in "${CONFIGS[@]}"; do
         if [[ -e $config ]]; then
@@ -30,7 +26,6 @@ sync_configs() {
     done
 }
 
-# Function to commit and push changes to the dotfiles repository
 update_git_repo() {
     cd "$DOTFILES_DIR" || { echo "Failed to change directory to $DOTFILES_DIR"; exit 1; }
     git add --all
@@ -39,13 +34,11 @@ update_git_repo() {
     git push
 }
 
-# Function to pull the latest changes from the dotfiles repository
 pull_configs() {
     cd "$DOTFILES_DIR" || { echo "Failed to change directory to $DOTFILES_DIR"; exit 1; }
     git pull --rebase
 }
 
-# Function to apply the dotfiles to the system
 apply_configs() {
     for config in "${CONFIGS[@]}"; do
         config_basename=$(basename "$config")
@@ -61,7 +54,6 @@ apply_configs() {
     done
 }
 
-# Main script logic
 case "$1" in
     backup)
         sync_configs
