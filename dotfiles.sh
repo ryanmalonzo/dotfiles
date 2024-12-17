@@ -18,7 +18,16 @@ DOTFILES_DIR=~/dotfiles
 sync_configs() {
     for config in "${CONFIGS[@]}"; do
         if [[ -e $config ]]; then
-            cp -r "$config" "$DOTFILES_DIR"
+            config_basename=$(basename "$config")
+            destination="$DOTFILES_DIR/$config_basename"
+
+            if [[ -d $config ]]; then
+                mkdir -p "$destination"
+                cp -r "$config/"* "$destination"
+            else
+                # For files, just copy them directly
+                cp "$config" "$destination"
+            fi
             echo "Synced $config to $DOTFILES_DIR"
         else
             echo "Warning: $config does not exist, skipping..."
@@ -46,7 +55,14 @@ apply_configs() {
         target_path="$config"
 
         if [[ -e $source_path ]]; then
-            cp -r "$source_path" "$target_path"
+            if [[ -d $source_path ]]; then
+                # Ensure target is a directory and copy contents
+                mkdir -p "$target_path"
+                cp -r "$source_path/"* "$target_path"
+            else
+                # Directly copy files
+                cp "$source_path" "$target_path"
+            fi
             echo "Applied $source_path to $target_path"
         else
             echo "Warning: $source_path does not exist in $DOTFILES_DIR, skipping..."
