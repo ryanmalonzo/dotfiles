@@ -1,0 +1,15 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = false
+
+[aws]
+disabled = true
+
+[direnv]
+disabled = false
+
+[git_commit]
+disabled = true
+
+[git_status]
+disabled = true

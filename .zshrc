@@ -61,3 +61,6 @@ eval "$(pyenv virtualenv-init - | sed s/precmd/precwd/g)"
 # oh-my-zsh plugins
 source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# starship
+eval "$(starship init zsh)"

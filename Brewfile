@@ -20,6 +20,7 @@ brew "prettierd"
 
 # general
 brew "lazygit"
+brew "starship"
 brew "tmux"
 brew "tree"
 brew "wget"

@@ -2,6 +2,7 @@
 
 CONFIGS=(
     ~/.config/nvim
+    ~/.config/starship.toml
     ~/.editorconfig
     ~/.gitconfig
     ~/.oh-my-zsh/custom/plugins
