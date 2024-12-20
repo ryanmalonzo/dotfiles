@@ -14,6 +14,7 @@ return {
             crust = "#000000",
           },
         },
+        transparent_background = true,
       }
 
       vim.cmd.colorscheme "catppuccin"

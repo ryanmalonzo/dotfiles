@@ -15,6 +15,8 @@ config.enable_scroll_bar = false
 config.enable_tab_bar = true
 config.font = wezterm.font_with_fallback({ "BlexMono Nerd Font", "JetBrains Mono" })
 config.font_size = 13
+config.macos_window_background_blur = 30
+config.window_background_opacity = 0.75
 config.window_close_confirmation = "AlwaysPrompt"
 config.window_decorations = "RESIZE"
 config.window_padding = {
@@ -33,6 +35,7 @@ config.inactive_pane_hsb = {
 -- Keys
 config.leader = { key = "s", mods = "CTRL", timeout_milliseconds = 1000 }
 config.keys = {
+  { key = "f", mods = "LEADER", action = act.ToggleFullScreen },
   -- Pane keybindings
   { key = "D", mods = "LEADER", action = act.SplitVertical({ domain = "CurrentPaneDomain" }) },
   { key = "d", mods = "LEADER", action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
@@ -40,19 +43,19 @@ config.keys = {
   { key = "j", mods = "LEADER", action = act.ActivatePaneDirection("Down") },
   { key = "k", mods = "LEADER", action = act.ActivatePaneDirection("Up") },
   { key = "l", mods = "LEADER", action = act.ActivatePaneDirection("Right") },
-  -- { key = "d", mods = "CTRL", action = act.CloseCurrentPane({ confirm = true }) },
-  {
-    key = "d",
-    mods = "CTRL",
-    action = wezterm.action_callback(function(window, pane)
-      local proc_name = pane:get_foreground_process_name()
-      if proc_name:find("vim") then
-        window:perform_action({ SendKey = { key = "d", mods = "CTRL" } }, pane)
-      else
-        window:perform_action(act.CloseCurrentPane({ confirm = true }), pane)
-      end
-    end),
-  },
+  { key = "x", mods = "LEADER", action = act.CloseCurrentPane({ confirm = true }) },
+  -- {
+  --   key = "d",
+  --   mods = "CTRL",
+  --   action = wezterm.action_callback(function(window, pane)
+  --     local proc_name = pane:get_foreground_process_name()
+  --     if proc_name:find("vim") then
+  --       window:perform_action({ SendKey = { key = "d", mods = "CTRL" } }, pane)
+  --     else
+  --       window:perform_action(act.CloseCurrentPane({ confirm = true }), pane)
+  --     end
+  --   end),
+  -- },
   {
     key = "r",
     mods = "LEADER",
