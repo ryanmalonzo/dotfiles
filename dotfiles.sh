@@ -1,3 +1,4 @@
+
 #!/bin/zsh
 
 CONFIGS=(
@@ -23,10 +24,13 @@ sync_configs() {
             destination="$DOTFILES_DIR/$config_basename"
 
             if [[ -d $config ]]; then
+                # Remove local copy before copying the new one
+                rm -rf "$destination"
                 mkdir -p "$destination"
                 cp -r "$config/"* "$destination"
             else
-                # For files, just copy them directly
+                # For files, just replace the existing file
+                rm -f "$destination"
                 cp "$config" "$destination"
             fi
             echo "Synced $config to $DOTFILES_DIR"
