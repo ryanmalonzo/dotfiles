@@ -9,8 +9,8 @@ brew "docker-compose"
 brew "colima"
 
 # file viewers
-brew "jless"
 brew "csview"
+brew "jless"
 brew "yazi"
 
 # formatters
