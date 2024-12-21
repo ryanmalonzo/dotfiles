@@ -32,7 +32,6 @@ brew "lua-language-server"
 brew "marksman"
 
 # node
-brew "node"
 brew "fnm"
 
 # neovim

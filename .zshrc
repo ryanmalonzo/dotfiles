@@ -43,6 +43,7 @@ alias dcp="docker compose ps"
 alias dcu="docker compose up -d"
 alias dots="~/dotfiles/dotfiles.sh"
 alias srczsh="source ~/.zshrc"
+alias v=nvim
 alias vim=nvim
 alias vimconfig="nvim ~/.config/nvim"
 alias zshconfig="nvim ~/.zshrc"
