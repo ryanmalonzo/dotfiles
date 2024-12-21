@@ -22,10 +22,12 @@ return {
         },
 
         formatters_by_ft = {
-          javascript = { "prettierd", "prettier", stop_after_first = true },
+          javascript = { "prettierd" },
+          javascriptreact = { "deno_fmt" },
           lua = { "stylua" },
-          markdown = { "prettierd", "prettier", stop_after_first = true },
+          markdown = { "prettierd" },
           python = { "isort", "black" },
+          typescriptreact = { "deno_fmt" },
         },
 
         format_on_save = function(bufnr)
