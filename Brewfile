@@ -11,6 +11,7 @@ brew "colima"
 # file viewers
 brew "jless"
 brew "csview"
+brew "yazi"
 
 # formatters
 brew "black"
