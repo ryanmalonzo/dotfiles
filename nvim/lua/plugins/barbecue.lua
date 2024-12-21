@@ -1,3 +1,4 @@
+-- Winbar
 return {
   {
     "utilyre/barbecue.nvim",

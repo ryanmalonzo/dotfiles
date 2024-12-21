@@ -3,20 +3,24 @@ root = true
 # all
 [*]
 charset = utf-8
-indent_size = 4
+indent_size = 2
 indent_style = space
 end_of_line = lf
 insert_final_newline = true
 trim_trailing_whitespace = true
+
+# documentation, utils
+[*.{md,mdx,diff}]
+trim_trailing_whitespace = false
 
 # lua
 [*.lua]
 indent_style = space
 indent_size = 2
 
-# documentation, utils
-[*.{md,mdx,diff}]
-trim_trailing_whitespace = false
+# python
+[*.py]
+indent_size = 4
 
 # windows shell scripts
 [*.{cmd,bat,ps1}]

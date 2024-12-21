@@ -26,6 +26,10 @@ brew "tmux"
 brew "tree"
 brew "wget"
 
+# linters
+brew "eslint"
+brew "vscode-langservers-extracted"
+
 # lua
 brew "lua-language-server"
 
@@ -34,12 +38,15 @@ brew "marksman"
 
 # node
 brew "fnm"
+brew "node"
+brew "typescript"
 
 # neovim
-brew "neovim"
 brew "luarocks"
-brew "unzip"
+brew "neovim"
 brew "ripgrep"
+brew "tree-sitter"
+brew "unzip"
 
 # nerd fonts
 cask "font-jetbrains-mono-nerd-font"
