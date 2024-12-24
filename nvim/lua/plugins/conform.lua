@@ -27,6 +27,7 @@ return {
           lua = { "stylua" },
           markdown = { "prettierd" },
           python = { "isort", "black" },
+          typescript = { "deno_fmt" },
           typescriptreact = { "deno_fmt" },
         },
 

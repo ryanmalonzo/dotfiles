@@ -1,8 +1,8 @@
 return {
   {
     "saghen/blink.cmp",
-    lazy = false, -- lazy loading handled internally
-    version = "v0.*",
+    version = "*",
+    event = "InsertEnter",
     ---@module 'blink.cmp'
     ---@type blink.cmp.Config
     opts = {
@@ -14,6 +14,13 @@ return {
       },
 
       signature = { enabled = true },
+
+      completion = {
+        documentation = {
+          auto_show = true,
+          auto_show_delay_ms = 500,
+        },
+      },
     },
   },
 }
