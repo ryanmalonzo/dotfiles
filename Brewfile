@@ -20,6 +20,7 @@ brew "stylua"
 brew "prettierd"
 
 # general
+brew "eza"
 brew "lazygit"
 brew "starship"
 brew "tmux"

@@ -2,6 +2,7 @@
 #!/bin/zsh
 
 CONFIGS=(
+    ~/.config/eza
     ~/.config/nvim
     ~/.config/starship.toml
     ~/.editorconfig

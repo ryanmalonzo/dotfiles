@@ -32,6 +32,7 @@ export LSCOLORS=exfxcxdxbxegedabagacad
 export PATH=$HOME/.local/bin:$PATH
 export PYENV_ROOT="$HOME/.pyenv"
 export SAM_CLI_TELEMETRY=0
+export EZA_CONFIG_DIR=$HOME/.config/eza
 
 # Aliases
 alias brewupdate="brew update && brew upgrade"
@@ -43,6 +44,8 @@ alias dcp="docker compose ps"
 alias dcr="docker compose restart"
 alias dcu="docker compose up -d"
 alias dots="~/dotfiles/dotfiles.sh"
+alias ls="eza --oneline --icons --group-directories-first"
+alias tree="eza --oneline --icons --tree --level 1 --group-directories-first"
 alias srczsh="source ~/.zshrc"
 alias v=nvim
 alias vim=nvim
