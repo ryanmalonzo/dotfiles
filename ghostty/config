@@ -1,3 +1,6 @@
+# ghostty +show-config --default --docs
+# ghostty +list-themes
+
 # Fonts
 font-family = "BlexMono Nerd Font Mono"
 font-feature = -calt
