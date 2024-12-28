@@ -33,7 +33,7 @@ copy-on-select = false
 quit-after-last-window-closed = false
 shell-integration = zsh
 shell-integration-features = no-cursor,no-sudo,title
-macos-option-as-alt = true
+macos-option-as-alt = false
 
 # Keybinds
 keybind = alt+k=goto_split:top

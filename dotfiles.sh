@@ -3,6 +3,7 @@
 
 CONFIGS=(
     ~/.config/eza
+    ~/.config/firefox
     ~/.config/ghostty
     ~/.config/nvim
     ~/.config/starship.toml
