@@ -2,14 +2,14 @@
 # ghostty +list-themes
 
 # Fonts
-font-family = "BlexMono Nerd Font Mono"
+font-family = BlexMono Nerd Font Mono
 font-feature = -calt
 font-feature = -liga
 font-feature = -dlig
 font-size = 13
 
 # Theme
-theme = "Adventure"
+theme = Adventure
 
 # Background
 background-opacity = 0.75
@@ -25,7 +25,7 @@ scrollback-limit = 10000000
 fullscreen = false
 window-padding-x = 3
 window-padding-y = 3
-window-title-font-family = "BlexMono Nerd Font Mono"
+window-title-font-family = BlexMono Nerd Font Mono
 
 # Other
 mouse-hide-while-typing = true
@@ -36,10 +36,10 @@ shell-integration-features = no-cursor,no-sudo,title
 macos-option-as-alt = true
 
 # Keybinds
-keybind = shift+k=goto_split:top
-keybind = shift+l=goto_split:right
-keybind = shift+j=goto_split:bottom
-keybind = shift+h=goto_split:left
+keybind = alt+k=goto_split:top
+keybind = alt+l=goto_split:right
+keybind = alt+j=goto_split:bottom
+keybind = alt+h=goto_split:left
 keybind = ctrl+shift+k=new_split:up
 keybind = ctrl+shift+l=new_split:right
 keybind = ctrl+shift+j=new_split:down
