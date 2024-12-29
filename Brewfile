@@ -1,4 +1,6 @@
 # casks
+cask "firefox"
+cask "ghostty"
 cask "raycast"
 cask "rectangle"
 cask "wezterm"
