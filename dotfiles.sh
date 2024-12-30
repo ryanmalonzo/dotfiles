@@ -15,6 +15,7 @@ CONFIGS=(
     ~/Brewfile
     ~/iterm2.json
     ~/raycast.rayconfig
+    ~/RectangleConfig.json
     ~/.wezterm.lua
 )
 
