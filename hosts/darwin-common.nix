@@ -26,6 +26,7 @@
     enable = true;
     onActivation = {
       autoUpdate = true;
+      # Warning: will remove all the brews and casks that are not managed by Nix
       cleanup = "zap";
       upgrade = true;
     };
