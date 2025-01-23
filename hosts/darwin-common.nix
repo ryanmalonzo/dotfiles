@@ -14,13 +14,6 @@
     };
   };
 
-  # Basic system packages
-  environment.systemPackages = with pkgs; [
-    neovim
-    curl
-    wget
-  ];
-
   # Enable Touch ID for sudo
   security.pam.enableSudoTouchIdAuth = true;
 } 

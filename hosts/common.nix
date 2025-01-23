@@ -1,4 +1,5 @@
 { pkgs, ... }: {
+  # Nix configuration
   nix = {
     optimise.automatic = true;
     settings = {
@@ -11,4 +12,11 @@
       interval.Day = 7;
     };
   };
+
+  environment.systemPackages = with pkgs; [
+    neovim
+    coreutils
+    curl
+    wget
+  ];
 } 
