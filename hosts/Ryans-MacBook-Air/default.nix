@@ -10,6 +10,7 @@
   # - Different system settings
   # - Different service configurations
   environment.systemPackages = with pkgs; [
+    discord
     spotify
   ];
 
