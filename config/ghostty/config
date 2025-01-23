@@ -1,0 +1,57 @@
+# ghostty +show-config --default --docs
+# ghostty +list-themes
+
+# Fonts
+font-family = BlexMono Nerd Font Mono
+font-feature = -calt
+font-feature = -liga
+font-feature = -dlig
+font-size = 13
+
+# Theme
+theme = Adventure
+
+# Background
+background-opacity = 0.75
+background-blur-radius = 20
+
+# Splits
+unfocused-split-opacity = 0.5
+
+# Scrollback
+scrollback-limit = 10000000
+
+# Window
+fullscreen = false
+window-padding-x = 3
+window-padding-y = 3
+window-title-font-family = BlexMono Nerd Font Mono
+
+# Other
+mouse-hide-while-typing = true
+copy-on-select = false
+quit-after-last-window-closed = false
+shell-integration = zsh
+shell-integration-features = no-cursor,no-sudo,title
+macos-option-as-alt = false
+
+# Keybinds
+keybind = alt+k=goto_split:top
+keybind = alt+l=goto_split:right
+keybind = alt+j=goto_split:bottom
+keybind = alt+h=goto_split:left
+keybind = ctrl+shift+k=new_split:up
+keybind = ctrl+shift+l=new_split:right
+keybind = ctrl+shift+j=new_split:down
+keybind = ctrl+shift+h=new_split:left
+keybind = ctrl+shift+up=resize_split:up,10
+keybind = ctrl+shift+right=resize_split:right,10
+keybind = ctrl+shift+down=resize_split:down,10
+keybind = ctrl+shift+left=resize_split:left,10
+keybind = ctrl+shift+equal=equalize_splits
+
+keybind = ctrl+t=new_tab
+
+keybind = ctrl+l=clear_screen
+keybind = super+shift+f=toggle_fullscreen
+keybind = super+shift+r=reload_config

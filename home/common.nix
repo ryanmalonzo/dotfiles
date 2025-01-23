@@ -26,4 +26,10 @@
       };
     };
   };
+
+  # Ghostty
+  home.file.".config/ghostty/config" = {
+    source = ../config/ghostty/config;
+    recursive = true;
+  };
 }
