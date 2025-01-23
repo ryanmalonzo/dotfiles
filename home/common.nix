@@ -2,9 +2,8 @@
 
 {
   fonts.fontconfig.enable = true;
-  
   home.packages = with pkgs; [
-    (nerdfonts.override { fonts = [ "IBMPlexMono" ]; })
+    nerd-fonts.blex-mono
   ];
 
   editorconfig = {
@@ -42,6 +41,12 @@
   # Ghostty
   home.file.".config/ghostty/config" = {
     source = ../config/ghostty/config;
+    recursive = true;
+  };
+
+  # Rectangle
+  home.file."Library/Application Support/Rectangle/RectangleConfig.json" = {
+    source = ../config/rectangle/RectangleConfig.json;
     recursive = true;
   };
 }

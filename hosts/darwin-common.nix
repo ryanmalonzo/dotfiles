@@ -1,4 +1,8 @@
 { pkgs, ... }: {
+  environment.systemPackages = with pkgs; [
+    rectangle
+  ];
+
   # Enable basic system integration
   programs.zsh.enable = true;
   
@@ -25,14 +29,10 @@
       cleanup = "zap";
       upgrade = true;
     };
-    
     taps = [];
-
     casks = [
       "ghostty"
-      "rectangle"
     ];
-
     brews = [];
   };
 } 
