@@ -60,6 +60,7 @@
   };
 
   imports = [
+    ../common.nix
     ../../programs/bat
     ../../programs/git/personal.nix
     ../../programs/shell
