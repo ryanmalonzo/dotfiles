@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  imports = [ ./default.nix ];  # Import shared settings first
+  imports = [ ./default.nix ];
   
   programs.git = {
     userName = "Ryan Malonzo";
