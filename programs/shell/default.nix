@@ -26,6 +26,14 @@
     # Shell prompt
     starship = {
       enable = true;
+      enableZshIntegration = true;
+      settings = {
+        add_newline = false;
+        aws.disabled = true;
+        direnv.disabled = false;
+        git_commit.disabled = true;
+        git_status.disabled = true;
+      };
     };
 
     # Environment management
