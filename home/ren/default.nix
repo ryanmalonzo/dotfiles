@@ -58,10 +58,11 @@
     cd = "z";
     ci = "zi";
   };
-
+ 
   imports = [
     ../common.nix
     ../../programs/bat
+    ../../programs/firefox
     ../../programs/git/personal.nix
     ../../programs/shell
   ];
