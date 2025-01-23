@@ -9,4 +9,11 @@
   # - Different system packages
   # - Different system settings
   # - Different service configurations
+  environment.systemPackages = with pkgs; [
+    spotify
+  ];
+
+  homebrew.casks = [
+    "nextcloud"
+  ];
 } 
