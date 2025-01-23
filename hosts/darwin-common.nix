@@ -16,4 +16,23 @@
 
   # Enable Touch ID for sudo
   security.pam.enableSudoTouchIdAuth = true;
+
+  # Homebrew
+  homebrew = {
+    enable = true;
+    onActivation = {
+      autoUpdate = true;
+      cleanup = "zap";
+      upgrade = true;
+    };
+    
+    taps = [];
+
+    casks = [
+      "ghostty"
+      "rectangle"
+    ];
+
+    brews = [];
+  };
 } 
