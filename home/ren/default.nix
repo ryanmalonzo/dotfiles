@@ -21,6 +21,6 @@
 
   # Import program configurations
   imports = [
-    ./programs/git.nix
+    ../../programs/git/personal.nix
   ];
 }

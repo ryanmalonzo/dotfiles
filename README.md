@@ -26,16 +26,31 @@ git clone https://github.com/ryanmalonzo/dotfiles ~/dotfiles && \
 cd ~/dotfiles
 ```
 
-2. Build the configuration
+2. Apply the configuration
 
+For the first time setup:
 ```shell
-nix build .#darwinConfigurations.Ryans-MacBook-Air.system
+nix run nix-darwin -- switch --flake .
 ```
 
-3. Apply changes to the system
+For subsequent updates:
+```shell
+# Update and apply configuration
+darwin-rebuild switch --flake .
+```
+
+## Common Tasks
 
 ```shell
-./result/sw/bin/darwin-rebuild switch --flake .
+# Delete old generations
+nix-collect-garbage -d
+
+# Update all flake inputs
+nix flake update
+
+# Update specific input
+nix flake lock --update-input nixpkgs
+nix flake lock --update-input home-manager
 ```
 
 ## Acknowledgements
