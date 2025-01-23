@@ -33,6 +33,12 @@
     };
   };
 
+  # eza
+  home.file.".config/eza/theme.yml" = {
+    source = ../config/eza/theme.yml;
+    recursive = true;
+  };
+
   # Ghostty
   home.file.".config/ghostty/config" = {
     source = ../config/ghostty/config;
