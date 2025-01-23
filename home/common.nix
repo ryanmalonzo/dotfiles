@@ -1,6 +1,12 @@
 { config, pkgs, ... }:
 
 {
+  fonts.fontconfig.enable = true;
+  
+  home.packages = with pkgs; [
+    (nerdfonts.override { fonts = [ "IBMPlexMono" ]; })
+  ];
+
   editorconfig = {
     enable = true;
     settings = {
