@@ -32,6 +32,8 @@
     };
   };
 
+  ## Unmanaged config files
+  
   # eza
   home.file.".config/eza/theme.yml" = {
     source = ../config/eza/theme.yml;
@@ -44,9 +46,9 @@
     recursive = true;
   };
 
-  # Rectangle
-  home.file."Library/Application Support/Rectangle/RectangleConfig.json" = {
-    source = ../config/rectangle/RectangleConfig.json;
+  # Neovim
+  home.file.".config/nvim" = {
+    source = ../config/nvim;
     recursive = true;
   };
 }

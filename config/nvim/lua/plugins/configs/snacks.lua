@@ -1,0 +1,5 @@
+return {
+  lazygit = {},
+  quickfile = {},
+  picker = {},
+}

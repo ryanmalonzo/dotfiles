@@ -61,6 +61,7 @@
  
   imports = [
     ../common.nix
+    ../darwin-common.nix
     ../../programs/bat
     ../../programs/firefox
     ../../programs/git/personal.nix
