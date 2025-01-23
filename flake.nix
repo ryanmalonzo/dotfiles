@@ -19,7 +19,12 @@
         ];
 
       # Necessary for using flakes on this system.
-      nix.settings.experimental-features = "nix-command flakes";
+      nix = {
+        settings = {
+          experimental-features = "nix-command flakes";
+          warn-dirty = false;
+        };
+      };
 
       # Enable alternative shell support in nix-darwin.
       # programs.fish.enable = true;
