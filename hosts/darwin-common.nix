@@ -73,4 +73,6 @@
     ];
     brews = [];
   };
+
+  home-manager.backupFileExtension = "backup";
 } 

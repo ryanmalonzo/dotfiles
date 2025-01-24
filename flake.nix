@@ -18,20 +18,22 @@
         nix-darwin.lib.darwinSystem {
           inherit system;
           modules = [
+            mac-app-util.darwinModules.default
             ./hosts/common.nix
             ./hosts/darwin-common.nix
             (./hosts + "/${hostname}")
             home-manager.darwinModules.home-manager
-            mac-app-util.darwinModules.default
             {
               nixpkgs.overlays = [ inputs.nixpkgs-firefox-darwin.overlay ];
               users.users.${username}.home = "/Users/${username}";
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
-              home-manager.users.${username} = import (./home + "/${username}");
-              home-manager.users.${username}.imports = [
-                mac-app-util.homeManagerModules.default
-              ];
+              home-manager.users.${username} = {
+                imports = [
+                  (./home + "/${username}")
+                  mac-app-util.homeManagerModules.default
+                ];
+              };
             }
           ];
         };
