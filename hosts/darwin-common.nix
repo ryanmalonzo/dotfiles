@@ -69,6 +69,7 @@
     };
     taps = [];
     casks = [
+      "cursor"
       "ghostty"
     ];
     brews = [];

@@ -27,12 +27,13 @@
         show-recents = false;
         wvous-br-corner = 1; # Disable Quick Note
         
-        # Persistent apps in dock
+        # Pinned apps in dock
         persistent-apps = [
           "/Users/${config.username}/Applications/Home Manager Apps/Firefox.app"
           "/Applications/Nix Apps/Discord.app"
           "/Applications/Nix Apps/Spotify.app"
           "/Applications/Ghostty.app"
+          "/Applications/Cursor.app"
           "/System/Applications/System Settings.app"
         ];
       };
