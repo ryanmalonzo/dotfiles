@@ -17,29 +17,37 @@
         KeyRepeat = 2;
         "com.apple.mouse.tapBehavior" = 1;
       };
+
       dock = {
         autohide = true;
+        autohide-delay = 0.0;
         mineffect = "scale";
         mru-spaces = false;
         tilesize = 50;
       };
+
       finder = {
         AppleShowAllExtensions = true;
         NewWindowTarget = "Home";
         ShowPathbar = true;
         _FXShowPosixPathInTitle = true;
       };
+
       loginwindow = {
         GuestEnabled = false;
       };
+
       screencapture = {
         location = "~/Pictures/Screenshots";
         target = "clipboard";
+        type = "png";
       };
+
       trackpad = {
         Clicking = 1;
       };
     };
+
     startup = {
       chime = false;
     };
