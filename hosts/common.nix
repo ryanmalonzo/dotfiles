@@ -1,4 +1,6 @@
 { pkgs, ... }: {
+  nixpkgs.config.allowUnfree = true;
+
   # Nix configuration
   nix = {
     optimise.automatic = true;
