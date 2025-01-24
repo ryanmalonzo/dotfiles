@@ -1,8 +1,8 @@
-# My personal dotfiles for MacOS development
+# ❄️ Nix dotfiles
 
 ## Prerequisites
 
-1. Install OS dependencies
+1. Install macOS dependencies (if applicable)
 
 ```shell
 xcode-select --install
@@ -39,7 +39,7 @@ For subsequent updates:
 darwin-rebuild switch --flake .
 ```
 
-## Common Tasks
+## Common tasks
 
 ```shell
 # Delete old generations
@@ -55,4 +55,7 @@ nix flake lock --update-input home-manager
 
 ## Acknowledgements
 
-TBA
+- [dustinlyons/nixos-config](https://github.com/dustinlyons/nixos-config)
+- [chfanghr/dotfiles](https://github.com/chfanghr/dotfiles)
+- [ALT-F4-LLC/kickstart.nix](https://github.com/ALT-F4-LLC/kickstart.nix)
+- [Customizing Firefox with Nix and Home Manager](https://hugosum.com/blog/customizing-firefox-with-nix-and-home-manager)
