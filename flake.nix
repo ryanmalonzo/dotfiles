@@ -21,7 +21,9 @@
             mac-app-util.darwinModules.default
             ./hosts/common.nix
             ./hosts/darwin-common.nix
-            (./hosts + "/${hostname}")
+            (./hosts + "/${hostname}" + "/default.nix") {
+              inherit username;
+            }
             home-manager.darwinModules.home-manager
             {
               nixpkgs.overlays = [ inputs.nixpkgs-firefox-darwin.overlay ];
