@@ -9,6 +9,17 @@
   # - Different system packages
   # - Different system settings
   # - Different service configurations
+  system.defaults = {
+    NSGlobalDomain = {
+      AppleInterfaceStyle = "Dark"; # Dark mode
+      NSAutomaticWindowAnimationsEnabled = false;
+      NSDocumentSaveNewDocumentsToCloud = false;
+    };
+    dock = {
+      show-recents = false;
+    };
+  };
+  
   environment.systemPackages = with pkgs; [
     discord
     spotify
