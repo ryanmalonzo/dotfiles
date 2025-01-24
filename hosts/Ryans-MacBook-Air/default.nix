@@ -9,6 +9,10 @@
   # - Different system packages
   # - Different system settings
   # - Different service configurations
+  power = {
+    restartAfterFreeze = true;
+  };
+
   system.defaults = {
     NSGlobalDomain = {
       AppleInterfaceStyle = "Dark"; # Dark mode
@@ -17,6 +21,7 @@
     };
     dock = {
       show-recents = false;
+      wvous-br-corner = 1; # Disable Quick Note
     };
   };
   
