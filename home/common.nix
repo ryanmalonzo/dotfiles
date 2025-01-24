@@ -45,10 +45,4 @@
     source = ../config/ghostty/config;
     recursive = true;
   };
-
-  # Neovim
-  home.file.".config/nvim" = {
-    source = ../config/nvim;
-    recursive = true;
-  };
 }
