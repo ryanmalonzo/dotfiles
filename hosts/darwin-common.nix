@@ -44,7 +44,7 @@
       };
 
       trackpad = {
-        Clicking = 1;
+        Clicking = true;
       };
     };
 
