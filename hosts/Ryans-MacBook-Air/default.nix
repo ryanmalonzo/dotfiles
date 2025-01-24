@@ -67,7 +67,9 @@
     ];
 
     homebrew.casks = [
+      "cursor"
       "nextcloud"
+      "tailscale"
     ];
   };
 } 

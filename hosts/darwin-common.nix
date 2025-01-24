@@ -63,13 +63,12 @@
     enable = true;
     onActivation = {
       autoUpdate = true;
-      # Warning: will remove all the brews and casks that are not managed by Nix
+      # Warning: will uninstall all formulae and casks that are not listed below
       cleanup = "zap";
       upgrade = true;
     };
     taps = [];
     casks = [
-      "cursor"
       "ghostty"
     ];
     brews = [];
