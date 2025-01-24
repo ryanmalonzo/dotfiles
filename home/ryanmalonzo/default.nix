@@ -3,8 +3,8 @@
 {
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
-  home.username = "ren";
-  home.homeDirectory = "/Users/ren";
+  home.username = "ryanmalonzo";
+  home.homeDirectory = "/Users/ryanmalonzo";
 
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage
@@ -27,7 +27,7 @@
     lazygit
     tree
     zoxide
-    
+
     # Development tools
     ripgrep
     tree-sitter
@@ -36,11 +36,11 @@
     black
     direnv
     isort
-    
+
     # Node tools
     nodejs
     nodePackages.typescript
-    
+
     # File viewers
     csview
     jless
@@ -50,15 +50,15 @@
     # eza aliases
     ls = "eza --oneline --icons --group-directories-first";
     tree = "eza --oneline --icons --tree --level 1 --group-directories-first";
-    
+
     # bat alias
     cat = "bat";
-    
+
     # zoxide aliases
     cd = "z";
     ci = "zi";
   };
- 
+
   imports = [
     ../common.nix
     ../darwin-common.nix

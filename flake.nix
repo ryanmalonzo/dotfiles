@@ -14,7 +14,7 @@
 
   outputs = { self, nixpkgs, home-manager, nixpkgs-firefox-darwin, nix-darwin, mac-app-util, ... }@inputs:
     let
-      mkDarwinSystem = { system ? "aarch64-darwin", hostname, username ? "ren" }: 
+      mkDarwinSystem = { system ? "aarch64-darwin", hostname, username ? "ryanmalonzo" }:
         nix-darwin.lib.darwinSystem {
           inherit system;
           modules = [
@@ -42,7 +42,7 @@
       darwinConfigurations = {
         "Ryans-MacBook-Air" = mkDarwinSystem {
           hostname = "Ryans-MacBook-Air";
-          username = "ren";
+          username = "ryanmalonzo";
         };
         # Add more Darwin hosts here as needed:
         # "Other-Mac" = mkDarwinSystem {
