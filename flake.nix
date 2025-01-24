@@ -9,10 +9,14 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     nixpkgs-firefox-darwin.url = "github:bandithedoge/nixpkgs-firefox-darwin";
     nixpkgs-firefox-darwin.inputs.nixpkgs.follows = "nixpkgs";
+    nur = {
+      url = "github:nix-community/NUR";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     mac-app-util.url = "github:hraban/mac-app-util";
   };
 
-  outputs = { self, nixpkgs, home-manager, nixpkgs-firefox-darwin, nix-darwin, mac-app-util, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, nur, nixpkgs-firefox-darwin, nix-darwin, mac-app-util, ... }@inputs:
     let
       mkDarwinSystem = { system ? "aarch64-darwin", hostname, username ? "ryanmalonzo" }:
         nix-darwin.lib.darwinSystem {
@@ -26,7 +30,7 @@
             }
             home-manager.darwinModules.home-manager
             {
-              nixpkgs.overlays = [ inputs.nixpkgs-firefox-darwin.overlay ];
+              nixpkgs.overlays = [ inputs.nixpkgs-firefox-darwin.overlay inputs.nur.overlays.default ];
               users.users.${username}.home = "/Users/${username}";
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;

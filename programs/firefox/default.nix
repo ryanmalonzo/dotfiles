@@ -5,6 +5,13 @@
     enable = true;
     package = pkgs.firefox-bin;
     profiles.nix = {
+      extensions = with pkgs.nur.repos.rycee.firefox-addons; [
+        ublock-origin
+        bitwarden
+        violentmonkey
+        sponsorblock
+      ];
+
       settings = {
         # FASTFOX
         "content.notify.interval" = 100000;
