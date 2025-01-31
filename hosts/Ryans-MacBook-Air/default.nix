@@ -8,10 +8,10 @@
 
   config = {
     nixpkgs.hostPlatform = "aarch64-darwin";
-    
+
     networking.hostName = "Ryans-MacBook-Air";
     networking.computerName = "Ryans-MacBook-Air";
-    
+
     # Add any other host-specific configurations here
     # For example:
     # - Different system packages
@@ -26,7 +26,7 @@
       dock = {
         show-recents = false;
         wvous-br-corner = 1; # Disable Quick Note
-        
+
         # Pinned apps in dock
         persistent-apps = [
           "/Users/${config.username}/Applications/Home Manager Apps/Firefox.app"
@@ -60,7 +60,7 @@
     power = {
       restartAfterFreeze = true;
     };
-    
+
     environment.systemPackages = with pkgs; [
       discord
       spotify
@@ -68,8 +68,9 @@
 
     homebrew.casks = [
       "cursor"
+      "orbstack"
       "nextcloud"
       "tailscale"
     ];
   };
-} 
+}
