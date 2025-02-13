@@ -34,6 +34,7 @@
           "/Applications/Nix Apps/Spotify.app"
           "/Applications/Ghostty.app"
           "/Applications/Cursor.app"
+          "/Applications/ProtonVPN.app"
           "/System/Applications/System Settings.app"
         ];
       };
@@ -68,8 +69,9 @@
 
     homebrew.casks = [
       "cursor"
-      "orbstack"
       "nextcloud"
+      "orbstack"
+      "protonvpn"
       "tailscale"
     ];
   };
