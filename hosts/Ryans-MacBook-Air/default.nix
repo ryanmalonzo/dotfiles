@@ -72,6 +72,7 @@
       "nextcloud"
       "orbstack"
       "protonvpn"
+      "raycast"
       "tailscale"
     ];
   };
