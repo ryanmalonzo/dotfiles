@@ -5,7 +5,7 @@
 
   # Enable basic system integration
   programs.zsh.enable = true;
-  
+
   # Basic system settings
   system = {
     stateVersion = 4; # This should match your Darwin version
@@ -72,7 +72,10 @@
       "ghostty"
     ];
     brews = [];
+    caskArgs = {
+      no_quarantine = true;
+    };
   };
 
   home-manager.backupFileExtension = "backup";
-} 
+}
