@@ -4,11 +4,12 @@
       enable = true;
       autosuggestion.enable = true;
       syntaxHighlighting.enable = true;
-      
+
       # Environment variables
       sessionVariables = {
         EDITOR = "nvim";
         LANG = "en_US.UTF-8";
+        XDG_CONFIG_HOME = "$HOME/.config";
       };
 
       # Import aliases from separate file
@@ -42,4 +43,4 @@
       nix-direnv.enable = true;
     };
   };
-} 
+}
