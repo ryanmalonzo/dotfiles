@@ -27,7 +27,6 @@
         "network.http.max-persistent-connections-per-server" = 10;
         "network.http.max-urgent-start-excessive-connections-per-host" = 5;
         "network.http.pacing.requests.enabled" = false;
-        "network.dnsCacheExpiration" = 3600;
         "network.ssl_tokens_cache_capacity" = 10240;
         "network.dns.disablePrefetch" = true;
         "network.dns.disablePrefetchFromHTTPS" = true;
@@ -171,7 +170,10 @@
         "general.smoothScroll.mouseWheel.durationMinMS" = 80;
         "general.smoothScroll.currentVelocityWeighting" = "0.15";
         "general.smoothScroll.stopDecelerationWeighting" = "0.6";
+
+        # Disable DNS over HTTPS
+        "network.trr.mode" = 5;
       };
     };
   };
-} 
+}
