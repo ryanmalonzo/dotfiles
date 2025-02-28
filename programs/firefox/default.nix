@@ -2,7 +2,7 @@
 
 {
   programs.firefox = {
-    enable = true;
+    enable = false;
     package = pkgs.firefox-bin;
     profiles.nix = {
       extensions = with pkgs.nur.repos.rycee.firefox-addons; [

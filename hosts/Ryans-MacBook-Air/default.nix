@@ -29,7 +29,7 @@
 
         # Pinned apps in dock
         persistent-apps = [
-          "/Users/${config.username}/Applications/Home Manager Apps/Firefox.app"
+          "/Applications/Brave Browser.app"
           "/Applications/Nix Apps/Discord.app"
           "/Applications/Nix Apps/Spotify.app"
           "/Applications/Ghostty.app"
