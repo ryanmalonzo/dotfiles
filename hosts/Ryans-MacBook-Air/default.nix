@@ -68,6 +68,7 @@
     ];
 
     homebrew.casks = [
+      "brave-browser"
       "cursor"
       "nextcloud"
       "orbstack"
