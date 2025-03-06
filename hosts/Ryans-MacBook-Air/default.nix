@@ -70,7 +70,6 @@
       "brave-browser"
       "discord"
       "cursor"
-      "nextcloud"
       "orbstack"
       "protonvpn"
       "raycast"
