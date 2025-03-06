@@ -64,7 +64,6 @@
 
     environment.systemPackages = with pkgs; [
       spotify
-      thefuck
     ];
 
     homebrew.casks = [
