@@ -30,7 +30,7 @@
         # Pinned apps in dock
         persistent-apps = [
           "/Applications/Brave Browser.app"
-          "/Applications/Nix Apps/Discord.app"
+          "/Applications/Discord.app"
           "/Applications/Nix Apps/Spotify.app"
           "/Applications/Ghostty.app"
           "/Applications/Cursor.app"
@@ -63,12 +63,12 @@
     };
 
     environment.systemPackages = with pkgs; [
-      discord
       spotify
     ];
 
     homebrew.casks = [
       "brave-browser"
+      "discord"
       "cursor"
       "nextcloud"
       "orbstack"
