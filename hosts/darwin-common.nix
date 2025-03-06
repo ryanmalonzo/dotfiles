@@ -8,7 +8,7 @@
 
   # Basic system settings
   system = {
-    stateVersion = 4; # This should match your Darwin version
+    stateVersion = 5; # This should match your Darwin version
     defaults = {
       NSGlobalDomain = {
         ApplePressAndHoldEnabled = false;
