@@ -33,7 +33,7 @@
           "/Applications/Discord.app"
           "/Applications/Nix Apps/Spotify.app"
           "/Applications/Ghostty.app"
-          "/Applications/Cursor.app"
+          "/Applications/Visual Studio Code.app"
           "/Applications/ProtonVPN.app"
           "/System/Applications/System Settings.app"
         ];
@@ -70,11 +70,11 @@
     homebrew.casks = [
       "brave-browser"
       "discord"
-      "cursor"
       "orbstack"
       "protonvpn"
       "raycast"
       "tailscale"
+      "visual-studio-code"
     ];
   };
 }
