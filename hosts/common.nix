@@ -16,9 +16,10 @@
   };
 
   environment.systemPackages = with pkgs; [
-    neovim
+    cargo
     coreutils
     curl
+    neovim
     wget
   ];
-} 
+}
