@@ -39,6 +39,7 @@
 
     # Node tools
     nodejs
+    nodePackages.pnpm
     nodePackages.typescript
 
     # File viewers
