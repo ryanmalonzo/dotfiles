@@ -70,6 +70,7 @@
     homebrew.casks = [
       "brave-browser"
       "discord"
+      "obsidian"
       "orbstack"
       "protonvpn"
       "raycast"
