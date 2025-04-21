@@ -24,6 +24,7 @@
     bat
     eza
     fzf
+    httpie
     lazygit
     tree
     zoxide
