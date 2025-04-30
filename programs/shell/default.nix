@@ -15,7 +15,7 @@
       # Import aliases from separate file
       shellAliases = import ./aliases.nix;
 
-      initExtra = ''
+      initContent = ''
         # zoxide
         eval "$(zoxide init zsh)"
 
