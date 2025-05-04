@@ -37,6 +37,7 @@
     black
     direnv
     isort
+    uv
 
     # Node tools
     nodejs
