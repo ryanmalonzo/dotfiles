@@ -51,7 +51,7 @@
           username = "ryanmalonzo";
         };
         # Work
-        "ryan.malonzo" = mkDarwinSystem {
+        "PayFit" = mkDarwinSystem {
           hostname = "ryan.malonzo";
           username = "ryan.malonzo";
         };
