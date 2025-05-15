@@ -9,7 +9,7 @@
   config = {
     nixpkgs.hostPlatform = "aarch64-darwin";
 
-    networking.hostName = "ryan.malonzo";
+    # networking.hostName = "ryan.malonzo";
     networking.computerName = "ryan.malonzo";
 
     # Add any other host-specific configurations here
