@@ -50,6 +50,11 @@
           hostname = "Ryans-MacBook-Air";
           username = "ryanmalonzo";
         };
+        # Work
+        "ryan.malonzo" = mkDarwinSystem {
+          hostname = "ryan.malonzo";
+          username = "ryan.malonzo";
+        };
         # Add more Darwin hosts here as needed:
         # "Other-Mac" = mkDarwinSystem {
         #   hostname = "Other-Mac";
