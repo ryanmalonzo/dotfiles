@@ -7,7 +7,7 @@
     userName = "Ryan Malonzo";
     userEmail = "64932650+ryanmalonzo@users.noreply.github.com";
     signing = {
-      key = "/Users/ryanmalonzo/.ssh/git.pub";
+      key = "/Users/ryan.malonzo/.ssh/git.pub";
       signByDefault = true;
     };
     extraConfig = {
