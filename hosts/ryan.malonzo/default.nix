@@ -51,9 +51,8 @@
       restartAfterFreeze = true;
     };
 
-    environment.systemPackages = with pkgs; [
-      spotify
-    ];
+    # environment.systemPackages = with pkgs; [
+    # ];
 
     homebrew.casks = [
       "brave-browser"

@@ -31,7 +31,7 @@
         persistent-apps = [
           "/Applications/Brave Browser.app"
           "/Applications/Discord.app"
-          "/Applications/Nix Apps/Spotify.app"
+          "/Applications/Spotify.app"
           "/Applications/Ghostty.app"
           "/Applications/Visual Studio Code.app"
           "/Applications/ProtonVPN.app"
@@ -64,7 +64,6 @@
 
     environment.systemPackages = with pkgs; [
       go
-      spotify
     ];
 
     homebrew.casks = [
