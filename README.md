@@ -1,11 +1,15 @@
-# ❄️ Nix dotfiles
+# ❄️ Nix Dotfiles (Darwin)
 
 ## Prerequisites
 
-1. Install macOS dependencies (if applicable)
+1. Install macOS dependencies
 
 ```shell
 xcode-select --install
+```
+
+```shell
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 2. Install Nix using the [Determinate Nix Installer](https://github.com/DeterminateSystems/nix-installer)
@@ -14,6 +18,9 @@ xcode-select --install
 curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | \
 sh -s -- install
 ```
+
+> [!IMPORTANT]  
+> When prompted, choose to install regular Nix (from NixOS), **NOT** Determinate Nix.
 
 Then start a new shell session for `nix` to become available in `$PATH`.
 
@@ -29,11 +36,19 @@ cd ~/dotfiles
 2. Apply the configuration
 
 For the first time setup:
+
 ```shell
 nix run nix-darwin -- switch --flake .
 ```
 
+Or specify a specific profile with:
+
+```shell
+nix run nix-darwin -- switch -- flake.#<profile_name>
+```
+
 For subsequent updates:
+
 ```shell
 # Update and apply configuration
 darwin-rebuild switch --flake .
