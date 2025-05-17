@@ -73,6 +73,7 @@
       "orbstack"
       "protonvpn"
       "raycast"
+      "spotify"
       "tailscale"
       "visual-studio-code"
     ];
