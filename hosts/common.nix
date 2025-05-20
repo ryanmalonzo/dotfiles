@@ -19,7 +19,9 @@
     cargo
     coreutils
     curl
+    go
     neovim
+    prettierd
     wget
   ];
 }
