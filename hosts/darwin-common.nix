@@ -1,10 +1,13 @@
-{ pkgs, ... }: {
+{ pkgs, config, ... }: {
   environment.systemPackages = with pkgs; [
     rectangle
   ];
 
   # Enable basic system integration
   programs.zsh.enable = true;
+
+  # Set primary user for user-specific settings
+  system.primaryUser = config.username;
 
   # Basic system settings
   system = {
