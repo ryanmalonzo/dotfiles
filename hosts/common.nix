@@ -19,6 +19,7 @@
     cargo
     coreutils
     curl
+    glow
     go
     neovim
     prettierd
