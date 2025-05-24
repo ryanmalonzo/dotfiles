@@ -10,6 +10,8 @@
         EDITOR = "nvim";
         LANG = "en_US.UTF-8";
         XDG_CONFIG_HOME = "$HOME/.config";
+        # npm configuration
+        NPM_CONFIG_PREFIX = "$HOME/.npm-global";
       };
 
       # Import aliases from separate file

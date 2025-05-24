@@ -19,6 +19,9 @@
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
+  # Add npm global bin directory to PATH
+  home.sessionPath = [ "$HOME/.npm-global/bin" ];
+
   home.packages = with pkgs; [
     # CLI tools
     bat
