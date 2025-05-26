@@ -72,6 +72,7 @@
       "discord"
       "obsidian"
       "orbstack"
+      "orion"
       "protonvpn"
       "raycast"
       "spotify"
