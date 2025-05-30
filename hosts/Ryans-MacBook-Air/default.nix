@@ -68,6 +68,7 @@
     ];
 
     homebrew.casks = [
+      "adguard"
       "brave-browser"
       "discord"
       "obsidian"
