@@ -54,6 +54,7 @@
     environment.systemPackages = with pkgs; [
       google-cloud-sdk
       spotify
+      terraform
     ];
 
     homebrew.casks = [
