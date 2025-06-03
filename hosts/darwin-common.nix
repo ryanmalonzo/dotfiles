@@ -49,6 +49,10 @@
       trackpad = {
         Clicking = true;
       };
+
+      WindowManager = {
+        "EnableStandardClickToShowDesktop" = false;
+      };
     };
 
     startup = {
