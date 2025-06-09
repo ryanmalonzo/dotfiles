@@ -29,7 +29,7 @@
 
         # Pinned apps in dock
         persistent-apps = [
-          "/Applications/Brave Browser.app"
+          "/Applications/LibreWolf.app"
           "/Applications/Discord.app"
           "/Applications/Spotify.app"
           "/Applications/Ghostty.app"
@@ -69,8 +69,8 @@
 
     homebrew.casks = [
       "adguard"
-      "brave-browser"
       "discord"
+      "librewolf"
       "obsidian"
       "orbstack"
       "protonvpn"
