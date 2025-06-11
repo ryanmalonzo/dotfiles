@@ -24,6 +24,7 @@
       dock = {
         autohide = true;
         autohide-delay = 0.0;
+        expose-group-apps = true;
         mineffect = "scale";
         mru-spaces = false;
         tilesize = 50;
