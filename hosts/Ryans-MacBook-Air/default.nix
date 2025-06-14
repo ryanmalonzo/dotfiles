@@ -65,6 +65,7 @@
     environment.systemPackages = with pkgs; [
       awscli2
       protobuf
+      protoc-gen-go
     ];
 
     homebrew.casks = [
