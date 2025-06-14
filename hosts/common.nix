@@ -23,6 +23,7 @@
     go
     neovim
     prettierd
+    terraform
     wget
   ];
 }

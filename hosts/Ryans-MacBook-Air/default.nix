@@ -64,7 +64,6 @@
 
     environment.systemPackages = with pkgs; [
       awscli2
-      terraform
     ];
 
     homebrew.casks = [
