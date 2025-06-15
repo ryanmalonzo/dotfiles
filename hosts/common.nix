@@ -23,6 +23,7 @@
     go
     neovim
     prettierd
+    tealdeer
     terraform
     wget
   ];
