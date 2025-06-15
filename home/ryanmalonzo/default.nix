@@ -69,7 +69,6 @@
     ../common.nix
     ../darwin-common.nix
     ../../programs/bat
-    ../../programs/firefox
     ../../programs/git/personal.nix
     ../../programs/shell
     ../../programs/thefuck

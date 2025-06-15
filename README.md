@@ -104,4 +104,3 @@ Some changes (like npm configuration) may require a new shell session to take ef
 - [dustinlyons/nixos-config](https://github.com/dustinlyons/nixos-config)
 - [chfanghr/dotfiles](https://github.com/chfanghr/dotfiles)
 - [ALT-F4-LLC/kickstart.nix](https://github.com/ALT-F4-LLC/kickstart.nix)
-- [Customizing Firefox with Nix and Home Manager](https://hugosum.com/blog/customizing-firefox-with-nix-and-home-manager)
