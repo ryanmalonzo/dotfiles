@@ -23,6 +23,8 @@
     go
     neovim
     prettierd
+    protobuf
+    protoc-gen-go
     tealdeer
     terraform
     wget
