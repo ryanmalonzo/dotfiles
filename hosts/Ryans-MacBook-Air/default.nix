@@ -74,7 +74,7 @@
       "protonvpn"
       "raycast"
       "spotify"
-      "tailscale"
+      "tailscale-app"
       "visual-studio-code"
     ];
   };
