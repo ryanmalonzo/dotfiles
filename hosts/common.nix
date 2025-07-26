@@ -16,6 +16,7 @@
   };
 
   environment.systemPackages = with pkgs; [
+    ansible
     cargo
     coreutils
     curl
@@ -23,9 +24,6 @@
     go
     neovim
     prettierd
-    protobuf
-    protoc-gen-go
-    protoc-gen-go-grpc
     tealdeer
     terraform
     wget
