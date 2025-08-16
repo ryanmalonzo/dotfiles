@@ -67,7 +67,6 @@
     ];
 
     homebrew.casks = [
-      "brave-browser"
       "discord"
       "obsidian"
       "orbstack"
@@ -76,6 +75,7 @@
       "spotify"
       "tailscale-app"
       "visual-studio-code"
+      "zen"
     ];
   };
 }
