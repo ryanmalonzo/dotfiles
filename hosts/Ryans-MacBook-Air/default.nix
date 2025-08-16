@@ -29,7 +29,7 @@
 
         # Pinned apps in dock
         persistent-apps = [
-          "/Applications/Brave Browser.app"
+          "/Applications/Zen.app"
           "/Applications/Discord.app"
           "/Applications/Spotify.app"
           "/Applications/Ghostty.app"
