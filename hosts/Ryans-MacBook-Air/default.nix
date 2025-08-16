@@ -67,6 +67,7 @@
     ];
 
     homebrew.casks = [
+      "bitwarden"
       "discord"
       "obsidian"
       "orbstack"
