@@ -1,10 +1,58 @@
 { config, pkgs, ... }:
 
 {
+  home.stateVersion = "24.11";
+
+  programs.home-manager.enable = true;
+
+  # Add npm global bin directory to PATH
+  home.sessionPath = [ "$HOME/.npm-global/bin" ];
+
   fonts.fontconfig.enable = true;
   home.packages = with pkgs; [
     nerd-fonts.blex-mono
+    
+    # CLI tools
+    bat
+    eza
+    fzf
+    httpie
+    lazygit
+    tree
+    zoxide
+
+    # Development tools
+    ripgrep
+    tree-sitter
+
+    # Python tools
+    black
+    direnv
+    isort
+    uv
+
+    # Node tools
+    nodejs
+    nodePackages.pnpm
+    nodePackages.typescript
+
+    # File viewers
+    csview
+    jless
   ];
+
+  programs.zsh.shellAliases = {
+    # eza aliases
+    ls = "eza --oneline --icons --group-directories-first";
+    tree = "eza --oneline --icons --tree --level 1 --group-directories-first";
+
+    # bat alias
+    cat = "bat";
+
+    # zoxide aliases
+    cd = "z";
+    ci = "zi";
+  };
 
   editorconfig = {
     enable = true;
@@ -51,4 +99,11 @@
     source = ../config/lazygit/config.yml;
     recursive = true;
   };
+
+  imports = [
+    ./darwin-common.nix
+    ../programs/bat
+    ../programs/shell
+    ../programs/thefuck
+  ];
 }

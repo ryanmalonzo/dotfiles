@@ -1,71 +1,17 @@
 { pkgs, config, lib, ... }: {
-  options = {
-    username = lib.mkOption {
-      type = lib.types.str;
-      description = "The primary user's username";
-    };
-  };
+  imports = [
+    ../common.nix
+    ../darwin-common.nix
+  ];
 
   config = {
-    nixpkgs.hostPlatform = "aarch64-darwin";
-
     # networking.hostName = "ryan.malonzo";
     networking.computerName = "ryan.malonzo";
 
-    # Add any other host-specific configurations here
-    # For example:
-    # - Different system packages
-    # - Different system settings
-    # - Different service configurations
-    system.defaults = {
-      NSGlobalDomain = {
-        AppleInterfaceStyle = "Dark"; # Dark mode
-        NSAutomaticWindowAnimationsEnabled = false;
-        NSDocumentSaveNewDocumentsToCloud = false;
-      };
-      dock = {
-        show-recents = false;
-        wvous-br-corner = 1; # Disable Quick Note
-      };
-
-      CustomUserPreferences = {
-        "com.apple.desktopservices" = {
-          # Avoid creating .DS_Store files on network or USB volumes
-          DSDontWriteNetworkStores = true;
-          DSDontWriteUSBStores = true;
-        };
-
-        "com.apple.AdLib" = {
-          allowApplePersonalizedAdvertising = false;
-        };
-
-        "com.apple.SoftwareUpdate" = {
-          AutomaticCheckEnabled = true;
-          AutomaticDownload = 1;
-          CriticalUpdateInstall = 1;
-        };
-      };
-    };
-
-    power = {
-      restartAfterFreeze = true;
-    };
-
+    # Work-specific packages
     environment.systemPackages = with pkgs; [
-      awscli2
       google-cloud-sdk
       spotify
-    ];
-
-    homebrew.casks = [
-      "discord"
-      "obsidian"
-      "orbstack"
-      "raycast"
-      "spotify"
-      "tailscale-app"
-      "visual-studio-code"
-      "zen"
     ];
   };
 }
