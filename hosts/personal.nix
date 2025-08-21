@@ -1,7 +1,7 @@
 { pkgs, config, lib, ... }: {
   imports = [
-    ../common.nix
-    ../darwin-common.nix
+    ./common.nix
+    ./darwin-common.nix
   ];
 
   config = {

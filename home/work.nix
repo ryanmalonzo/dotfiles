@@ -5,7 +5,7 @@
   home.homeDirectory = "/Users/ryan.malonzo";
 
   imports = [
-    ../common.nix
-    ../../programs/git/work.nix
+    ./common.nix
+    ../programs/git/work.nix
   ];
 }

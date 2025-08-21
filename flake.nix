@@ -11,45 +11,48 @@
 
   outputs = { self, nixpkgs, home-manager, nix-darwin, ... }@inputs:
     let
-      mkDarwinSystem = { system ? "aarch64-darwin", hostname, username ? "ryanmalonzo" }:
+      # Profile configurations - add new profiles here
+      profiles = {
+        personal = {
+          username = "ryanmalonzo";
+          homeDirectory = "/Users/ryanmalonzo";
+          hostConfigPath = ./hosts/personal.nix;
+          homeConfigPath = ./home/personal.nix;
+        };
+        work = {
+          username = "ryan.malonzo";
+          homeDirectory = "/Users/ryan.malonzo";
+          hostConfigPath = ./hosts/work.nix;
+          homeConfigPath = ./home/work.nix;
+        };
+      };
+
+      mkDarwinSystem = { system ? "aarch64-darwin", profile }:
+        let
+          profileConfig = profiles.${profile};
+        in
         nix-darwin.lib.darwinSystem {
           inherit system;
           modules = [
             ./hosts/common.nix
             ./hosts/darwin-common.nix
-            (./hosts + "/${hostname}" + "/default.nix") {
-              inherit username;
-            }
+            profileConfig.hostConfigPath
             home-manager.darwinModules.home-manager
             {
-              users.users.${username}.home = "/Users/${username}";
+              username = profileConfig.username;
+              users.users.${profileConfig.username}.home = profileConfig.homeDirectory;
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
-              home-manager.users.${username} = {
-                imports = [
-                  (./home + "/${username}")
-                ];
+              home-manager.users.${profileConfig.username} = {
+                imports = [ profileConfig.homeConfigPath ];
               };
             }
           ];
         };
     in
     {
-      darwinConfigurations = {
-        "Ryans-MacBook-Air" = mkDarwinSystem {
-          hostname = "Ryans-MacBook-Air";
-          username = "ryanmalonzo";
-        };
-        # Work
-        "PayFit" = mkDarwinSystem {
-          hostname = "ryan.malonzo";
-          username = "ryan.malonzo";
-        };
-        # Add more Darwin hosts here as needed:
-        # "Other-Mac" = mkDarwinSystem {
-        #   hostname = "Other-Mac";
-        #   username = "otheruser";
-        # };
-      };
+      darwinConfigurations = builtins.mapAttrs (profileName: _: mkDarwinSystem {
+        profile = profileName;
+      }) profiles;
     };
 }
