@@ -8,7 +8,6 @@
     networking.hostName = "Ryans-MacBook-Air";
     networking.computerName = "Ryans-MacBook-Air";
 
-    # Personal-specific dock configuration
     system.defaults.dock.persistent-apps = [
       "/Applications/Zen.app"
       "/Applications/Discord.app"
@@ -19,9 +18,9 @@
       "/System/Applications/System Settings.app"
     ];
 
-    # Personal-specific casks
     homebrew.casks = [
       "bitwarden"
+      "nextcloud"
       "protonvpn"
     ];
   };
