@@ -123,7 +123,7 @@
         "spotify"
         "tailscale-app"
         "visual-studio-code"
-        "zen"
+        "vivaldi"
       ];
       brews = [];
       caskArgs = {

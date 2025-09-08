@@ -9,7 +9,7 @@
     networking.computerName = "Ryans-MacBook-Air";
 
     system.defaults.dock.persistent-apps = [
-      "/Applications/Zen.app"
+      "/Applications/Vivaldi.app"
       "/Applications/Discord.app"
       "/Applications/Spotify.app"
       "/Applications/Ghostty.app"
