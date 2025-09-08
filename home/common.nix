@@ -100,6 +100,11 @@
     recursive = true;
   };
 
+  # Raycast
+  home.file."Desktop/raycast.rayconfig" = {
+    source = ../config/raycast/raycast.rayconfig;
+  };
+
   imports = [
     ./darwin-common.nix
     ../programs/bat
