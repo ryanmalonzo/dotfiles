@@ -14,7 +14,6 @@
       awscli2
     ];
 
-    # Enable basic system integration
     programs.zsh.enable = true;
 
     # Set primary user for user-specific settings
