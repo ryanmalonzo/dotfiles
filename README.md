@@ -22,7 +22,7 @@ xcode-select --install
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-2. Install Nix using the [Determinate Nix Installer](https://github.com/DeterminateSystems/nix-installer)
+2. Install Determinate Nix using the [Determinate Nix Installer](https://github.com/DeterminateSystems/nix-installer)
 
 ```shell
 curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | \
@@ -30,7 +30,7 @@ sh -s -- install
 ```
 
 > [!IMPORTANT]  
-> When prompted, choose to install regular Nix (from NixOS), **NOT** Determinate Nix.
+> When prompted, choose to install **Determinate Nix**, not the regular Nix.
 
 Then start a new shell session for `nix` to become available in `$PATH`.
 
@@ -48,13 +48,13 @@ cd ~/dotfiles
 For the first time setup:
 
 ```shell
-nix run nix-darwin -- switch --flake .
+sudo nix run nix-darwin -- switch --flake .
 ```
 
 Or specify a specific profile with:
 
 ```shell
-nix run nix-darwin -- switch --flake .#<profile_name>
+sudo nix run nix-darwin -- switch --flake .#<profile_name>
 ```
 
 > [!NOTE]  
