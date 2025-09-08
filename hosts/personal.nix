@@ -5,8 +5,8 @@
   ];
 
   config = {
-    networking.hostName = "Ryans-MacBook-Air";
-    networking.computerName = "Ryans-MacBook-Air";
+    networking.hostName = "Ryans-MacBook-Pro";
+    networking.computerName = "Ryans-MacBook-Pro";
 
     system.defaults.dock.persistent-apps = [
       "/Applications/Vivaldi.app"
