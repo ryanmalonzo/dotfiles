@@ -8,6 +8,10 @@
     networking.hostName = "Ryans-MacBook-Pro";
     networking.computerName = "Ryans-MacBook-Pro";
 
+    environment.systemPackages = with pkgs; [
+      mas
+    ];
+
     system.defaults.dock.persistent-apps = [
       "/Applications/Vivaldi.app"
       "/Applications/Discord.app"
@@ -19,9 +23,12 @@
     ];
 
     homebrew.casks = [
-      "bitwarden"
       "nextcloud"
       "protonvpn"
     ];
+
+    homebrew.masApps = {
+      "Bitwarden" = 1352778147;
+    };
   };
 }
