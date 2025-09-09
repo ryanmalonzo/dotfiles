@@ -13,6 +13,7 @@
     nerd-fonts.blex-mono
 
     # CLI tools
+    ast-grep
     bat
     eza
     fd
@@ -21,10 +22,8 @@
     lazygit
     ripgrep
     tree
-    zoxide
-
-    # Development tools
     tree-sitter
+    zoxide
 
     # Python tools
     black
