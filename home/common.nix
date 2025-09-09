@@ -11,18 +11,19 @@
   fonts.fontconfig.enable = true;
   home.packages = with pkgs; [
     nerd-fonts.blex-mono
-    
+
     # CLI tools
     bat
     eza
+    fd
     fzf
     httpie
     lazygit
+    ripgrep
     tree
     zoxide
 
     # Development tools
-    ripgrep
     tree-sitter
 
     # Python tools
