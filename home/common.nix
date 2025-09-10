@@ -25,6 +25,9 @@
     tree-sitter
     zoxide
 
+    # Lua tools
+    luarocks
+
     # Python tools
     black
     direnv
