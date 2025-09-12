@@ -114,6 +114,7 @@
       };
       taps = [];
       casks = [
+        "firefox"
         "ghostty"
         "discord"
         "obsidian"
@@ -122,7 +123,6 @@
         "spotify"
         "tailscale-app"
         "visual-studio-code"
-        "vivaldi"
       ];
       brews = [];
       caskArgs = {
