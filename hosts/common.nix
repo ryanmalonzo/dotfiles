@@ -11,6 +11,7 @@
     cargo
     coreutils
     curl
+    fnm
     glow
     go
     neovim

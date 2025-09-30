@@ -18,6 +18,9 @@
       shellAliases = import ./aliases.nix;
 
       initContent = ''
+        # fnm
+        eval "$(fnm env --use-on-cd --shell zsh)"
+
         # zoxide
         eval "$(zoxide init zsh)"
 
