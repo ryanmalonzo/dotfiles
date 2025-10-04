@@ -23,7 +23,6 @@
     ];
 
     homebrew.casks = [
-      "nextcloud"
       "protonvpn"
     ];
 
