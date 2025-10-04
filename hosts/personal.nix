@@ -13,7 +13,7 @@
     ];
 
     system.defaults.dock.persistent-apps = [
-      "/Applications/Firefox.app"
+      "/Applications/Safari.app"
       "/Applications/Discord.app"
       "/Applications/Spotify.app"
       "/Applications/Ghostty.app"

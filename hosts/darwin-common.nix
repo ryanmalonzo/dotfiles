@@ -114,7 +114,6 @@
       };
       taps = [];
       casks = [
-        "firefox"
         "ghostty"
         "discord"
         "obsidian"
