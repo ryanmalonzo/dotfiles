@@ -17,7 +17,7 @@
       "/Applications/Discord.app"
       "/Applications/Spotify.app"
       "/Applications/Ghostty.app"
-      "/Applications/Visual Studio Code.app"
+      "/Applications/WebStorm.app"
       "/Applications/ProtonVPN.app"
       "/System/Applications/System Settings.app"
     ];

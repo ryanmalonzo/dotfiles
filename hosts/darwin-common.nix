@@ -122,7 +122,7 @@
         "raycast"
         "spotify"
         "tailscale-app"
-        "visual-studio-code"
+        "webstorm"
       ];
       brews = [];
       caskArgs = {
