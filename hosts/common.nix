@@ -8,9 +8,11 @@
 
   environment.systemPackages = with pkgs; [
     ansible
+    biome
     cargo
     coreutils
     curl
+    eslint_d
     fnm
     glow
     go
