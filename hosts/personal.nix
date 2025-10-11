@@ -24,6 +24,7 @@
 
     homebrew.casks = [
       "brave-browser"
+      "discord"
       "protonvpn"
     ];
 

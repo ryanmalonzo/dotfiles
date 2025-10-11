@@ -115,7 +115,6 @@
       taps = [];
       casks = [
         "ghostty"
-        "discord"
         "obsidian"
         "orbstack"
         "raycast"
