@@ -13,7 +13,7 @@
     ];
 
     system.defaults.dock.persistent-apps = [
-      "/Applications/Safari.app"
+      "/Applications/Brave Browser.app"
       "/Applications/Discord.app"
       "/Applications/Spotify.app"
       "/Applications/Ghostty.app"
@@ -23,6 +23,7 @@
     ];
 
     homebrew.casks = [
+      "brave-browser"
       "protonvpn"
     ];
 
