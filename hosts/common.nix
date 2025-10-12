@@ -18,6 +18,7 @@
     go
     neovim
     prettierd
+    stylua
     tealdeer
     terraform
     wget
