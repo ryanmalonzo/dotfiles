@@ -10,19 +10,15 @@
 
   fonts.fontconfig.enable = true;
   home.packages = with pkgs; [
-    nerd-fonts.blex-mono
+    nerd-fonts.geist-mono
 
-    # CLI tools
-    ast-grep
+    # General tools
     bat
     eza
     fd
     fzf
-    httpie
     lazygit
     ripgrep
-    tree
-    tree-sitter
     zoxide
 
     # Lua tools
@@ -47,7 +43,7 @@
   programs.zsh.shellAliases = {
     # eza aliases
     ls = "eza --oneline --icons --group-directories-first";
-    tree = "eza --oneline --icons --tree --level 1 --group-directories-first";
+    tree = "ls --tree --level=1";
 
     # bat alias
     cat = "bat";
@@ -96,7 +92,6 @@
     source = ../config/ghostty/config;
     recursive = true;
   };
-
   # lazygit
   home.file.".config/lazygit/config.yml" = {
     source = ../config/lazygit/config.yml;

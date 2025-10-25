@@ -21,7 +21,7 @@
       "/Applications/Spotify.app"
       "/Applications/Ghostty.app"
       "/Applications/Visual Studio Code.app"
-      "/Applications/ProtonVPN.app"
+      "/Applications/Tailscale.app"
       "/System/Applications/System Settings.app"
     ];
 

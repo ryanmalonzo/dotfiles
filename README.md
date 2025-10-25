@@ -64,7 +64,7 @@ For subsequent updates:
 
 ```shell
 # Update and apply configuration (requires sudo)
-sudo darwin-rebuild switch --flake .
+sudo darwin-rebuild switch --flake .#<profile_name>
 ```
 
 ## Common tasks
@@ -94,6 +94,7 @@ If you encounter permission errors during cleanup operations (like uninstalling 
 ### Environment Variables
 
 After applying configuration changes, you may need to:
+
 - Restart your terminal application, or
 - Run `source ~/.zshrc` to reload environment variables
 

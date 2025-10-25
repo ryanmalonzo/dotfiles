@@ -2,7 +2,6 @@
   options = {
     username = lib.mkOption {
       type = lib.types.str;
-      description = "The primary user's username";
     };
   };
 
@@ -11,17 +10,15 @@
 
     environment.systemPackages = with pkgs; [
       rectangle
-      awscli2
     ];
 
     programs.zsh.enable = true;
 
-    # Set primary user for user-specific settings
     system.primaryUser = config.username;
 
     # Basic system settings
     system = {
-      stateVersion = 5; # This should match your Darwin version
+      stateVersion = 5;
       defaults = {
         NSGlobalDomain = {
           ApplePressAndHoldEnabled = false;
@@ -29,7 +26,7 @@
           InitialKeyRepeat = 15;
           KeyRepeat = 2;
           "com.apple.mouse.tapBehavior" = 1;
-          AppleInterfaceStyle = "Dark"; # Dark mode
+          AppleInterfaceStyle = "Dark";
           NSAutomaticWindowAnimationsEnabled = false;
           NSDocumentSaveNewDocumentsToCloud = false;
         };
@@ -115,12 +112,14 @@
       taps = [];
       casks = [
         "ghostty"
+        "kitty"
         "obsidian"
         "orbstack"
         "raycast"
         "spotify"
         "tailscale-app"
         "visual-studio-code"
+        "yaak"
       ];
       brews = [];
       caskArgs = {

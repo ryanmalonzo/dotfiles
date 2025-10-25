@@ -2,7 +2,10 @@
   programs = {
     zsh = {
       enable = true;
-      autosuggestion.enable = true;
+      autosuggestion = {
+          enable = true;
+          strategy = ["match_prev_cmd"];
+        };
       syntaxHighlighting.enable = true;
 
       # Environment variables
@@ -35,10 +38,7 @@
       enableZshIntegration = true;
       settings = {
         add_newline = false;
-        aws.disabled = true;
         direnv.disabled = false;
-        git_commit.disabled = true;
-        git_status.disabled = true;
       };
     };
 
