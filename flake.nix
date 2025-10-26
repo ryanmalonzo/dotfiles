@@ -19,12 +19,6 @@
           hostConfigPath = ./hosts/personal.nix;
           homeConfigPath = ./home/personal.nix;
         };
-        beta = {
-          username = "ryanmalonzo";
-          homeDirectory = "/Users/ryanmalonzo";
-          hostConfigPath = ./hosts/beta.nix;
-          homeConfigPath = ./home/beta.nix;
-        };
         work = {
           username = "ryan.malonzo";
           homeDirectory = "/Users/ryan.malonzo";
