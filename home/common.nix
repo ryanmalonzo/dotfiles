@@ -19,6 +19,7 @@
     fzf
     lazygit
     ripgrep
+    zellij
     zoxide
 
     # Lua tools
@@ -87,11 +88,12 @@
     recursive = true;
   };
 
-  # Ghostty
-  home.file.".config/ghostty/config" = {
-    source = ../config/ghostty/config;
+  # Kitty
+  home.file.".config/kitty" = {
+    source = ../config/kitty;
     recursive = true;
   };
+
   # lazygit
   home.file.".config/lazygit/config.yml" = {
     source = ../config/lazygit/config.yml;
@@ -101,6 +103,12 @@
   # Raycast
   home.file."Desktop/raycast.rayconfig" = {
     source = ../config/raycast/raycast.rayconfig;
+  };
+
+  # Zellij
+  home.file.".config/zellij" = {
+    source = ../config/zellij;
+    recursive = true;
   };
 
   imports = [
