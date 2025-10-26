@@ -15,7 +15,7 @@
     ];
 
     system.defaults.dock.persistent-apps = [
-      "/Applications/Brave Browser.app"
+      "/Applications/Helium.app"
       "/Applications/Discord.app"
       "/Applications/Spotify.app"
       "/Applications/Kitty.app"
@@ -25,8 +25,8 @@
     ];
 
     homebrew.casks = [
-      "brave-browser"
       "discord"
+      "helium-browser"
       "protonvpn"
     ];
 
