@@ -66,7 +66,7 @@ keybinds clear-defaults=true {
         bind "j" { Resize "Increase down"; }
         bind "k" { Resize "Increase up"; }
         bind "l" { Resize "Increase right"; }
-        bind "Ctrl r" { SwitchToMode "normal"; }
+        bind "Ctrl =" { SwitchToMode "normal"; }
     }
     move {
         bind "left" { MovePane "left"; }
@@ -173,7 +173,7 @@ keybinds clear-defaults=true {
         bind "Ctrl m" { SwitchToMode "pane"; }
     }
     shared_except "locked" "resize" {
-        bind "Ctrl r" { SwitchToMode "resize"; }
+        bind "Ctrl =" { SwitchToMode "resize"; }
     }
     shared_except "normal" "locked" "entersearch" {
         bind "enter" { SwitchToMode "normal"; }
