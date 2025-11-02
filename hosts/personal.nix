@@ -10,6 +10,7 @@
 
     environment.systemPackages = with pkgs; [
       ansible
+      biome
       mas
       terraform
     ];
