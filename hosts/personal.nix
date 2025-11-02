@@ -20,6 +20,7 @@
       "/Applications/Discord.app"
       "/Applications/Spotify.app"
       "/Applications/Kitty.app"
+      "/Applications/Cursor.app"
       "/Applications/Visual Studio Code.app"
       "/Applications/Tailscale.app"
       "/System/Applications/System Settings.app"
