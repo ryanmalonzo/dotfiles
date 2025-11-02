@@ -25,7 +25,9 @@
     ];
 
     homebrew.casks = [
+      "cursor"
       "discord"
+      "google-chrome"
       "helium-browser"
       "protonvpn"
     ];
