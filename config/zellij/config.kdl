@@ -3,10 +3,10 @@ keybinds clear-defaults=true {
     //     bind "Ctrl g" { SwitchToMode "normal"; }
     // }
     pane {
-        bind "left" { MoveFocus "left"; }
-        bind "down" { MoveFocus "down"; }
-        bind "up" { MoveFocus "up"; }
-        bind "right" { MoveFocus "right"; }
+        // bind "left" { MoveFocus "left"; }
+        // bind "down" { MoveFocus "down"; }
+        // bind "up" { MoveFocus "up"; }
+        // bind "right" { MoveFocus "right"; }
         bind "c" { SwitchToMode "renamepane"; PaneNameInput 0; }
         bind "d" { NewPane "down"; SwitchToMode "normal"; }
         bind "f" { ToggleFocusFullscreen; SwitchToMode "normal"; }
