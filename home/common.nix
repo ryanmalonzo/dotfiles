@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, lib, pkgs, ... }:
 
 {
   home.stateVersion = "24.11";
@@ -41,17 +41,26 @@
     jless
   ];
 
-  programs.zsh.shellAliases = {
-    # eza aliases
-    ls = "eza --oneline --icons --group-directories-first";
-    tree = "ls --tree --level=1";
+  programs.zsh = {
+    shellAliases = {
+      # eza aliases
+      ls = "eza --oneline --icons --group-directories-first";
+      tree = "ls --tree --level=1";
 
-    # bat alias
-    cat = "bat";
+      # bat alias
+      cat = "bat";
 
-    # zoxide aliases
-    cd = "z";
-    ci = "zi";
+      # zoxide aliases
+      cd = "z";
+      ci = "zi";
+    };
+
+    # Early return for VS Code and Cursor terminals
+    initContent = lib.mkBefore ''
+      if [[ "$TERM_PROGRAM" == "vscode" ]] || [[ "$TERM_PROGRAM" == "cursor" ]]; then
+        return
+      fi
+    '';
   };
 
   editorconfig = {
