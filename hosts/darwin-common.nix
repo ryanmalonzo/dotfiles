@@ -111,7 +111,7 @@
       };
       taps = [];
       casks = [
-        "kitty"
+        "ghostty"
         "obsidian"
         "orbstack"
         "raycast"

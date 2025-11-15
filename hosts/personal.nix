@@ -19,7 +19,7 @@
       "/Applications/Helium.app"
       "/Applications/Discord.app"
       "/Applications/Spotify.app"
-      "/Applications/Kitty.app"
+      "/Applications/Ghostty.app"
       "/Applications/Cursor.app"
       "/Applications/Visual Studio Code.app"
       "/Applications/Tailscale.app"
