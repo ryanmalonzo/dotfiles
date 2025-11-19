@@ -16,7 +16,7 @@
     ];
 
     system.defaults.dock.persistent-apps = [
-      "/Applications/Helium.app"
+      "/Applications/Brave Browser.app"
       "/Applications/Discord.app"
       "/Applications/Spotify.app"
       "/Applications/Ghostty.app"
@@ -27,10 +27,10 @@
     ];
 
     homebrew.casks = [
+      "brave-browser"
       "cursor"
       "discord"
       "google-chrome"
-      "helium-browser"
       "protonvpn"
     ];
 
