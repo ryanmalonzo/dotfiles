@@ -95,6 +95,10 @@
     source = ../config/alacritty/alacritty.toml;
     recursive = true;
   };
+  home.file.".config/alacritty/colors.toml" = {
+    source = ../config/alacritty/colors.toml;
+    recursive = true;
+  };
 
   # eza
   home.file.".config/eza/theme.yml" = {
