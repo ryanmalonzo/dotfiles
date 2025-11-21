@@ -1,4 +1,4 @@
-font-family = "GeistMono Nerd Font Mono"
+font-family = "CommitMono Nerd Font Mono"
 font-feature = -calt, -liga, -dlig
 font-size = 13
 
@@ -30,7 +30,7 @@ keybind = ctrl+shift+equal=equalize_splits
 window-padding-x = 2
 window-padding-y = 2
 
-window-title-font-family = GeistMono Nerd Font Mono
+window-title-font-family = CommitMono Nerd Font Mono
 
 shell-integration = zsh
 

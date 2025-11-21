@@ -10,7 +10,7 @@
 
   fonts.fontconfig.enable = true;
   home.packages = with pkgs; [
-    nerd-fonts.geist-mono
+    nerd-fonts.commit-mono
 
     # General tools
     bat
