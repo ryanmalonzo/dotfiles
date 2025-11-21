@@ -4,6 +4,8 @@
   dcu = "docker compose up -d";
   dcp = "docker compose ps";
   lg = "lazygit";
+  ccopy = "pbcopy < ";
+  cpaste = "pbpaste";
   v = "nvim";
   vi = "nvim";
   vim = "nvim";
