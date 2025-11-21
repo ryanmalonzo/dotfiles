@@ -90,6 +90,12 @@
 
   ## Unmanaged config files
 
+  # Alacritty
+  home.file.".config/alacritty/alacritty.toml" = {
+    source = ../config/alacritty/alacritty.toml;
+    recursive = true;
+  };
+
   # eza
   home.file.".config/eza/theme.yml" = {
     source = ../config/eza/theme.yml;

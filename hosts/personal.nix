@@ -19,7 +19,7 @@
       "/Applications/Brave Browser.app"
       "/Applications/Discord.app"
       "/Applications/Spotify.app"
-      "/Applications/Ghostty.app"
+      "/Applications/Alacritty.app"
       "/Applications/Cursor.app"
       "/Applications/Visual Studio Code.app"
       "/Applications/Tailscale.app"
