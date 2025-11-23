@@ -112,7 +112,6 @@
       taps = [];
       casks = [
         "alacritty"
-        "obsidian"
         "orbstack"
         "raycast"
         "spotify"
