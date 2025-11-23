@@ -112,6 +112,7 @@
       taps = [];
       casks = [
         "alacritty"
+        "dbeaver-community"
         "orbstack"
         "raycast"
         "spotify"
