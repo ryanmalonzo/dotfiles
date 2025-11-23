@@ -5,8 +5,11 @@
 
   programs.home-manager.enable = true;
 
-  # Add npm global bin directory to PATH
-  home.sessionPath = [ "$HOME/.npm-global/bin" ];
+  home.sessionPath = [
+    # Add npm global bin directory to PATH
+    "$HOME/.npm-global/bin"
+    "$HOME/go/bin"
+  ];
 
   fonts.fontconfig.enable = true;
   home.packages = with pkgs; [
