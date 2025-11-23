@@ -35,6 +35,9 @@
     nodePackages.pnpm
     nodePackages.typescript
 
+    # Go tools
+    go
+
     # File viewers
     csview
     jless
