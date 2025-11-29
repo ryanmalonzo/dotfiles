@@ -9,7 +9,14 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = { self, nixpkgs, home-manager, nix-darwin, ... }@inputs:
+  outputs =
+    {
+      self,
+      nixpkgs,
+      home-manager,
+      nix-darwin,
+      ...
+    }@inputs:
     let
       # Profile configurations - add new profiles here
       profiles = {
@@ -27,7 +34,11 @@
         };
       };
 
-      mkDarwinSystem = { system ? "aarch64-darwin", profile }:
+      mkDarwinSystem =
+        {
+          system ? "aarch64-darwin",
+          profile,
+        }:
         let
           profileConfig = profiles.${profile};
         in
@@ -51,8 +62,11 @@
         };
     in
     {
-      darwinConfigurations = builtins.mapAttrs (profileName: _: mkDarwinSystem {
-        profile = profileName;
-      }) profiles;
+      darwinConfigurations = builtins.mapAttrs (
+        profileName: _:
+        mkDarwinSystem {
+          profile = profileName;
+        }
+      ) profiles;
     };
 }

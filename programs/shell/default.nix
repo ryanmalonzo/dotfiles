@@ -1,11 +1,12 @@
-{ config, pkgs, ... }: {
+{ config, pkgs, ... }:
+{
   programs = {
     zsh = {
       enable = true;
       autosuggestion = {
-          enable = true;
-          strategy = ["match_prev_cmd"];
-        };
+        enable = true;
+        strategy = [ "match_prev_cmd" ];
+      };
       syntaxHighlighting.enable = true;
 
       # Environment variables

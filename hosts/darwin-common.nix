@@ -1,4 +1,10 @@
-{ pkgs, config, lib, ... }: {
+{
+  pkgs,
+  config,
+  lib,
+  ...
+}:
+{
   options = {
     username = lib.mkOption {
       type = lib.types.str;
@@ -109,7 +115,7 @@
         cleanup = "zap";
         upgrade = false;
       };
-      taps = [];
+      taps = [ ];
       casks = [
         "alacritty"
         "dbeaver-community"
@@ -120,7 +126,7 @@
         "visual-studio-code"
         "yaak"
       ];
-      brews = [];
+      brews = [ ];
       caskArgs = {
         no_quarantine = true;
       };
