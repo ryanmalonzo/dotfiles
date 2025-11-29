@@ -49,6 +49,11 @@
     # Go tools
     go
 
+    # Nix tools
+    deadnix
+    nixd
+    statix
+
     # File viewers
     csview
     jless
