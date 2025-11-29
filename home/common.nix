@@ -13,23 +13,31 @@
 
   fonts.fontconfig.enable = true;
   home.packages = with pkgs; [
+    # Fonts
     nerd-fonts.commit-mono
 
-    # General tools
+    # CLI tools & productivity
     bat
     eza
     fd
     fzf
+    glow
     lazygit
+    neovim
     ripgrep
+    tealdeer
     zoxide
+
+    # Development tools
+    cargo
+    direnv
+    fnm
 
     # Lua tools
     luarocks
 
     # Python tools
     black
-    direnv
     isort
     uv
 
