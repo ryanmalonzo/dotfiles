@@ -50,6 +50,7 @@
     go
 
     # Nix tools
+    colmena
     deadnix
     nixd
     statix
