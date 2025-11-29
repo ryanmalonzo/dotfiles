@@ -52,6 +52,7 @@
     # Nix tools
     colmena
     deadnix
+    nixfmt-rfc-style
     nixd
     statix
 
