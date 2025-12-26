@@ -42,6 +42,7 @@
 
     homebrew.masApps = {
       "Bitwarden" = 1352778147;
+      "One Thing" = 1604176982;
     };
   };
 }
