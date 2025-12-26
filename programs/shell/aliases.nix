@@ -1,11 +1,13 @@
 {
+  ccopy = "pbcopy < ";
+  cpaste = "pbpaste";
   dcd = "docker compose down";
   dce = "docker compose exec";
   dcu = "docker compose up -d";
   dcp = "docker compose ps";
+  gp = "git pull";
+  gs = "git switch";
   lg = "lazygit";
-  ccopy = "pbcopy < ";
-  cpaste = "pbpaste";
   v = "nvim";
   vi = "nvim";
   vim = "nvim";
