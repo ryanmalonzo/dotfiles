@@ -26,7 +26,7 @@
       "/Applications/Discord.app"
       "/Applications/Spotify.app"
       "/Applications/Alacritty.app"
-      "/Applications/Cursor.app"
+      "/Applications/Zed.app"
       "/Applications/Visual Studio Code.app"
       "/Applications/Tailscale.app"
       "/System/Applications/System Settings.app"
@@ -34,10 +34,10 @@
 
     homebrew.casks = [
       "brave-browser"
-      "cursor"
       "discord"
       "google-chrome"
       "protonvpn"
+      "zed"
     ];
 
     homebrew.masApps = {

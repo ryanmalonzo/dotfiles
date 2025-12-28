@@ -82,7 +82,7 @@
 
     # Early return for VS Code and Cursor terminals
     initContent = lib.mkBefore ''
-      if [[ "$TERM_PROGRAM" == "vscode" ]] || [[ "$TERM_PROGRAM" == "cursor" ]]; then
+      if [[ "$TERM_PROGRAM" == "vscode" ]] || [[ "$TERM_PROGRAM" == "cursor" ]] || [[ "$TERM_PROGRAM" == "zed" ]]; then
         return
       fi
     '';
