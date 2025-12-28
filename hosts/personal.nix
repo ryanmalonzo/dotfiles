@@ -27,7 +27,6 @@
       "/Applications/Spotify.app"
       "/Applications/Alacritty.app"
       "/Applications/Zed.app"
-      "/Applications/Visual Studio Code.app"
       "/Applications/Tailscale.app"
       "/System/Applications/System Settings.app"
     ];

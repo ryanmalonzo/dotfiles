@@ -123,7 +123,6 @@
         "raycast"
         "spotify"
         "tailscale-app"
-        "visual-studio-code"
         "yaak"
       ];
       brews = [ ];
