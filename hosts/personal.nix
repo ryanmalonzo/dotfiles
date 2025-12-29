@@ -36,6 +36,7 @@
       "discord"
       "google-chrome"
       "protonvpn"
+      "todoist-app"
       "zed"
     ];
 
