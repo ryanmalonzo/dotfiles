@@ -28,6 +28,7 @@
       "/Applications/Alacritty.app"
       "/Applications/Zed.app"
       "/Applications/Tailscale.app"
+      "/Applications/Todoist.app"
       "/System/Applications/System Settings.app"
     ];
 
