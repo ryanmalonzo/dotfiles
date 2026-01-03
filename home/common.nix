@@ -132,11 +132,6 @@
     recursive = true;
   };
 
-  # Ghostty
-  home.file.".config/ghostty/config" = {
-    source = ../config/ghostty/config;
-    recursive = true;
-  };
   # lazygit
   home.file.".config/lazygit/config.yml" = {
     source = ../config/lazygit/config.yml;
