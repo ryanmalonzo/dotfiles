@@ -143,6 +143,11 @@
     source = ../config/raycast/raycast.rayconfig;
   };
 
+  # Zed
+  home.file.".config/zed/settings.json" = {
+    source = ../config/zed/settings.json;
+  };
+
   imports = [
     ./darwin-common.nix
     ../programs/bat

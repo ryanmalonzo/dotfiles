@@ -1,0 +1,46 @@
+{
+  "edit_predictions": {
+    "mode": "subtle"
+  },
+  "calls": {
+    "mute_on_join": true
+  },
+  "title_bar": {
+    "show_branch_icon": true
+  },
+  "use_smartcase_search": true,
+  "diagnostics": {
+    "inline": {
+      "enabled": true
+    }
+  },
+  "prettier": {
+    "allowed": true
+  },
+  "toolbar": {
+    "code_actions": true
+  },
+  "relative_line_numbers": "enabled",
+  "buffer_font_family": "CommitMono Nerd Font Mono",
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "vim_mode": true,
+  "base_keymap": "VSCode",
+  "ui_font_size": 16,
+  "buffer_font_size": 15,
+  "theme": {
+    "mode": "system",
+    "light": "Ayu Light",
+    "dark": "Cursor Dark"
+  },
+  "auto_install_extensions": {
+    "html": true,
+    "terraform": true,
+    "prisma": true,
+    "nix": true,
+    "gdscript": true,
+    "cursor": true
+  }
+}
