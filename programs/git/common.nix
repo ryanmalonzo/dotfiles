@@ -4,13 +4,15 @@
   imports = [ ./default.nix ];
 
   programs.git = {
-    userName = "Ryan Malonzo";
-    userEmail = "64932650+ryanmalonzo@users.noreply.github.com";
     signing = {
       signByDefault = true;
     };
-    extraConfig = {
+    settings = {
       gpg.format = "ssh";
+      user = {
+        email = "64932650+ryanmalonzo@users.noreply.github.com";
+        name = "Ryan Malonzo";
+      };
     };
   };
 }

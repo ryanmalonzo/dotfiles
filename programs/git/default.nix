@@ -5,7 +5,7 @@
     enable = true;
 
     # Shared settings across all hosts
-    extraConfig = {
+    settings = {
       init.defaultBranch = "main";
       pull.rebase = true;
       core.editor = "vim";

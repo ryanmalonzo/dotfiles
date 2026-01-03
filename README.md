@@ -79,6 +79,13 @@ nix flake update
 # Update specific input
 nix flake lock --update-input nixpkgs
 nix flake lock --update-input home-manager
+
+# Update to a new Nix version (e.g., 25.05 to 25.11)
+# 1. Update version numbers in flake.nix (e.g., nixos-25.05 -> nixos-25.11)
+# 2. Fetch new dependency versions
+nix flake update
+# 3. Apply the updated configuration
+sudo nix run nix-darwin -- switch --flake .#<profile_name>
 ```
 
 ## Troubleshooting
