@@ -35,6 +35,7 @@
 
     homebrew.casks = [
       "brave-browser"
+      "claude-code"
       "discord"
       "google-chrome"
       "protonvpn"
