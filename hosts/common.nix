@@ -11,6 +11,8 @@
   environment.systemPackages = with pkgs; [
     coreutils
     curl
+    lua-language-server
+    tree-sitter
     wget
   ];
 }
