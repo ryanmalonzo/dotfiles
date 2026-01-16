@@ -2,6 +2,7 @@
   config,
   lib,
   pkgs,
+  inputs,
   ...
 }:
 
@@ -28,7 +29,7 @@
     fzf
     glow
     lazygit
-    neovim
+    inputs.neovim-nightly-overlay.packages.${pkgs.system}.default
     ripgrep
     tealdeer
     zoxide
