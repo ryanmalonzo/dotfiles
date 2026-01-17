@@ -27,6 +27,7 @@
     eza
     fd
     fzf
+    gh
     glow
     lazygit
     inputs.neovim-nightly-overlay.packages.${pkgs.system}.default
