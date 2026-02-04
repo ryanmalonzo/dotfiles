@@ -15,10 +15,12 @@
     networking.computerName = "Ryans-MacBook-Pro";
 
     environment.systemPackages = with pkgs; [
+      age
       ansible
       biome
       bun
       mas
+      sops
       terraform
     ];
 
