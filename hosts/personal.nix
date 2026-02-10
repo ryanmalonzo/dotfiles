@@ -35,6 +35,10 @@
       "/System/Applications/System Settings.app"
     ];
 
+    homebrew.brews = [
+      "mole"
+    ];
+
     homebrew.casks = [
       "brave-browser"
       "claude-code"
