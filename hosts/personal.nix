@@ -26,7 +26,7 @@
 
     system.defaults.dock.persistent-apps = [
       "/Applications/Brave Browser.app"
-      "/Applications/Discord.app"
+      "/Applications/Legcord.app"
       "/Applications/Spotify.app"
       "/Applications/Alacritty.app"
       "/Applications/Zed.app"
@@ -42,8 +42,8 @@
     homebrew.casks = [
       "brave-browser"
       "claude-code"
-      "discord"
       "google-chrome"
+      "legcord"
       "protonvpn"
       "todoist-app"
       "zed"
