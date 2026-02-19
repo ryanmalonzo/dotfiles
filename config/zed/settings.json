@@ -42,6 +42,7 @@
     "nix": true,
     "cursor": true,
     "tsgo": true,
+    "lua": true,
   },
   "languages": {
     "TypeScript": {
