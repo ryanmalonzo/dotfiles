@@ -1,49 +1,59 @@
 {
   "session": {
-    "trust_all_worktrees": true
+    "trust_all_worktrees": true,
   },
   "edit_predictions": {
-    "mode": "subtle"
+    "mode": "subtle",
   },
   "calls": {
-    "mute_on_join": true
+    "mute_on_join": true,
   },
   "title_bar": {
-    "show_branch_icon": true
+    "show_branch_icon": false,
   },
   "use_smartcase_search": true,
   "diagnostics": {
     "inline": {
-      "enabled": true
-    }
-  },
-  "prettier": {
-    "allowed": true
+      "enabled": true,
+    },
   },
   "toolbar": {
-    "code_actions": true
+    "code_actions": true,
   },
   "relative_line_numbers": "enabled",
+  "vim_mode": true,
+  "base_keymap": "VSCode",
   "buffer_font_family": "CommitMono Nerd Font Mono",
   "telemetry": {
     "diagnostics": false,
-    "metrics": false
+    "metrics": false,
   },
-  "vim_mode": true,
-  "base_keymap": "VSCode",
   "ui_font_size": 16,
   "buffer_font_size": 15,
   "theme": {
     "mode": "system",
     "light": "Ayu Light",
-    "dark": "Cursor Dark"
+    "dark": "Cursor Dark",
   },
   "auto_install_extensions": {
     "html": true,
     "terraform": true,
     "prisma": true,
     "nix": true,
-    "gdscript": true,
-    "cursor": true
-  }
+    "cursor": true,
+    "tsgo": true,
+  },
+  "languages": {
+    "TypeScript": {
+      "language_servers": ["tsgo", "eslint"],
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true,
+      },
+    },
+    "TSX": {
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true,
+      },
+    },
+  },
 }
