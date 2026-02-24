@@ -27,7 +27,6 @@
     system.defaults.dock.persistent-apps = [
       "/Applications/Brave Browser.app"
       "/Applications/Legcord.app"
-      "/Applications/Calendar.app"
       "/Applications/Spotify.app"
       "/Applications/Alacritty.app"
       "/Applications/Zed.app"
