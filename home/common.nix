@@ -154,5 +154,6 @@
     ./darwin-common.nix
     ../programs/bat
     ../programs/shell
+    ../programs/tmux
   ];
 }
