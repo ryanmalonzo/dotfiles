@@ -18,6 +18,7 @@
           set -g @catppuccin_window_status_style "rounded"
         '';
       }
+      vim-tmux-navigator
     ];
 
     extraConfig = ''
@@ -27,11 +28,6 @@
       unbind %
 
       bind c new-window -c "#{pane_current_path}"
-
-      bind h select-pane -L
-      bind j select-pane -D
-      bind k select-pane -U
-      bind l select-pane -R
 
       set -g mouse on
 
