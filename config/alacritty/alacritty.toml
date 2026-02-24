@@ -8,6 +8,7 @@ y = 20
 [window]
 opacity = 0.75
 blur = true
+option_as_alt = "OnlyLeft"
 
 [font.normal]
 family = "CommitMono Nerd Font Mono"
