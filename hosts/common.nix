@@ -9,8 +9,6 @@
   environment.systemPackages = with pkgs; [
     coreutils
     curl
-    tmux
-    tree-sitter
     wget
   ];
 }

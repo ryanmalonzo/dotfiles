@@ -32,6 +32,7 @@
     lazygit
     inputs.neovim-nightly-overlay.packages.${pkgs.system}.default
     ripgrep
+    tree-sitter
     tealdeer
     zoxide
 
