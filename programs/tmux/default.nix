@@ -27,6 +27,7 @@
       unbind %
 
       bind c new-window -c "#{pane_current_path}"
+      bind = select-layout tiled
 
       # smart-splits: navigation and resizing, aware of Neovim splits
       bind -n C-h if -F "#{@pane-is-vim}" 'send-keys C-h' 'select-pane -L'
