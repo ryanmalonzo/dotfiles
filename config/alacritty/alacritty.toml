@@ -22,4 +22,5 @@ TERM = "xterm-256color"
 [[keyboard.bindings]]
 key = "Return"
 mods = "Shift"
-chars = "\n"
+chars = "\u001b[13;2u"
+
