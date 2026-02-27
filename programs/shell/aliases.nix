@@ -1,5 +1,6 @@
 {
   ccopy = "pbcopy < ";
+  cls = "clear";
   cpaste = "pbpaste";
   dcd = "docker compose down";
   dce = "docker compose exec";
