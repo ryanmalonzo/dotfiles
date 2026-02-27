@@ -8,6 +8,7 @@
     settings = {
       init.defaultBranch = "main";
       pull.rebase = true;
+      rebase.updateRefs = true;
       core.editor = "vim";
     };
   };
