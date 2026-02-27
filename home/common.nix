@@ -28,7 +28,6 @@
     fd
     fzf
     gh
-    git-spice
     glow
     lazygit
     inputs.neovim-nightly-overlay.packages.${pkgs.system}.default
