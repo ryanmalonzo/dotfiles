@@ -36,6 +36,7 @@
 
     homebrew.brews = [
       "mole"
+      "opencode"
     ];
 
     homebrew.casks = [
