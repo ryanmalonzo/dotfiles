@@ -151,6 +151,11 @@
     source = ../config/zed/settings.json;
   };
 
+  # OpenCode
+  home.file.".config/opencode/opencode.json" = {
+    source = ../config/opencode/opencode.json;
+  };
+
   imports = [
     ./darwin-common.nix
     ../programs/bat
