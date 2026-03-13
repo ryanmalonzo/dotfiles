@@ -11,7 +11,7 @@ blur = true
 option_as_alt = "OnlyLeft"
 
 [font.normal]
-family = "CommitMono Nerd Font Mono"
+family = "GeistMono Nerd Font Mono"
 
 [font]
 size = 15.0

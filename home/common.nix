@@ -20,7 +20,7 @@
   fonts.fontconfig.enable = true;
   home.packages = with pkgs; [
     # Fonts
-    nerd-fonts.commit-mono
+    nerd-fonts.geist-mono
 
     # CLI tools & productivity
     bat
