@@ -51,6 +51,16 @@
             profileConfig.hostConfigPath
             home-manager.darwinModules.home-manager
             {
+              # Workaround: fish 4.2.1 has an invalid code signature on darwin,
+              # causing the direnv test suite to be killed. Disable tests until fixed.
+              # https://github.com/NixOS/nixpkgs/issues/507531
+              nixpkgs.overlays = [
+                (_final: prev: {
+                  direnv = prev.direnv.overrideAttrs (_: { doCheck = false; });
+                })
+              ];
+            }
+            {
               username = profileConfig.username;
               users.users.${profileConfig.username}.home = profileConfig.homeDirectory;
               home-manager.useGlobalPkgs = true;

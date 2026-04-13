@@ -42,7 +42,7 @@
     homebrew.casks = [
       "brave-browser"
       "claude-code"
-      "google-chrome"
+      "finetune"
       "legcord"
       "protonvpn"
       "zed"

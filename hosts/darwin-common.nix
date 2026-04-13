@@ -117,7 +117,6 @@
       taps = [ ];
       casks = [
         "alacritty"
-        "dbeaver-community"
         "orbstack"
         "raycast"
         "spotify"
@@ -125,9 +124,6 @@
         "yaak"
       ];
       brews = [ ];
-      caskArgs = {
-        no_quarantine = true;
-      };
     };
 
     home-manager.backupFileExtension = "backup";
