@@ -12,10 +12,9 @@
         extraConfig = "set -g @resurrect-strategy-nvim 'session'";
       }
       {
-        plugin = catppuccin;
+        plugin = rose-pine;
         extraConfig = ''
-          set -g @catppuccin_flavor "mocha"
-          set -g @catppuccin_window_status_style "rounded"
+          set -g @rose_pine_variant "main"
         '';
       }
     ];
