@@ -119,19 +119,15 @@
 
   ## Unmanaged config files
 
-  # Alacritty
-  home.file.".config/alacritty/alacritty.toml" = {
-    source = ../config/alacritty/alacritty.toml;
-    recursive = true;
-  };
-  home.file.".config/alacritty/colors.toml" = {
-    source = ../config/alacritty/colors.toml;
-    recursive = true;
-  };
-
   # eza
   home.file.".config/eza/theme.yml" = {
     source = ../config/eza/theme.yml;
+    recursive = true;
+  };
+
+  # Ghostty
+  home.file.".config/ghostty/config.ghostty" = {
+    source = ../config/ghostty/config.ghostty;
     recursive = true;
   };
 

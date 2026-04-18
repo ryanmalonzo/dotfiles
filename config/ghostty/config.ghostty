@@ -1,0 +1,19 @@
+font-family = "GeistMono Nerd Font Mono"
+font-feature = -calt, -liga, -dlig
+font-size = 15
+font-thicken = true
+
+theme = "Rose Pine"
+
+background-opacity = 0.8
+background-blur = macos-glass-clear
+
+window-padding-x = 20
+window-padding-y = 20
+window-padding-balance = true
+
+shell-integration = zsh
+shell-integration-features = sudo, ssh-env, ssh-terminfo
+
+macos-option-as-alt = left
+macos-icon = retro
