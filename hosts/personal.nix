@@ -36,13 +36,11 @@
 
     homebrew.brews = [
       "mole"
-      "opencode"
     ];
 
     homebrew.casks = [
       "brave-browser"
       "claude-code"
-      "finetune"
       "legcord"
       "protonvpn"
       "zed"
