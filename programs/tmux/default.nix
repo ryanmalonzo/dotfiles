@@ -15,6 +15,9 @@
         plugin = rose-pine;
         extraConfig = ''
           set -g @rose_pine_variant "main"
+          set -g @rose_pine_bar_bg_disable 'on'
+          set -g @rose_pine_bar_bg_disabled_color_option 'default'
+          set -g @rose_pine_show_current_program 'on'
         '';
       }
     ];
