@@ -5,6 +5,8 @@ font-thicken = true
 
 theme = "Rose Pine"
 
+cursor-style = block
+
 background-opacity = 0.8
 background-blur = macos-glass-clear
 
