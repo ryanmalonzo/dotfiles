@@ -16,6 +16,9 @@
         XDG_CONFIG_HOME = "$HOME/.config";
         # npm configuration
         NPM_CONFIG_PREFIX = "$HOME/.npm-global";
+        # telemetry opt-out
+        DO_NOT_TRACK = "true";
+        GH_TELEMETRY = "false";
       };
 
       # Import aliases from separate file
