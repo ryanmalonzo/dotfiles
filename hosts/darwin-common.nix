@@ -112,7 +112,7 @@
         autoUpdate = true;
         # Warning: will uninstall all formulae and casks that are not listed below
         cleanup = "zap";
-        upgrade = false;
+        upgrade = true;
       };
       taps = [ ];
       casks = [
