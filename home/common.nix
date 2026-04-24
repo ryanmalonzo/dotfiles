@@ -69,6 +69,16 @@
     jless
   ];
 
+  home.activation.installNpmPackages =
+    let
+      npmPackages = [
+        "@typescript/native-preview@beta"
+      ];
+    in
+    lib.hm.dag.entryAfter [ "writeBoundary" ] ''
+      run ${pkgs.nodejs}/bin/npm install -g --prefix $HOME/.npm-global ${lib.concatStringsSep " " npmPackages}
+    '';
+
   programs.zsh = {
     shellAliases = {
       # eza aliases
