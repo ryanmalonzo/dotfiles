@@ -8,10 +8,6 @@
     plugins = with pkgs.tmuxPlugins; [
       sensible
       {
-        plugin = resurrect;
-        extraConfig = "set -g @resurrect-strategy-nvim 'session'";
-      }
-      {
         plugin = rose-pine;
         extraConfig = ''
           set -g @rose_pine_variant "main"
