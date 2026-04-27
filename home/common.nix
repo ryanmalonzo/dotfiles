@@ -93,8 +93,9 @@
       ci = "zi";
     };
 
-    # Early return for VS Code and Cursor terminals
     initContent = lib.mkBefore ''
+      eval "$(/opt/homebrew/bin/brew shellenv)"
+
       if [[ "$TERM_PROGRAM" == "vscode" ]] || [[ "$TERM_PROGRAM" == "cursor" ]] || [[ "$TERM_PROGRAM" == "zed" ]]; then
         return
       fi
@@ -162,8 +163,13 @@
     source = ../config/opencode/opencode.json;
   };
 
+  # Rectangle
+  home.file."Library/Application Support/Rectangle/RectangleConfig.json" = {
+    source = ../config/rectangle/RectangleConfig.json;
+    recursive = true;
+  };
+
   imports = [
-    ./darwin-common.nix
     ../programs/bat
     ../programs/shell
     ../programs/tmux

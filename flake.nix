@@ -47,7 +47,6 @@
           inherit system;
           modules = [
             ./hosts/common.nix
-            ./hosts/darwin-common.nix
             profileConfig.hostConfigPath
             home-manager.darwinModules.home-manager
             {
