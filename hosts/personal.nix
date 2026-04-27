@@ -5,11 +5,6 @@
   ...
 }:
 {
-  imports = [
-    ./common.nix
-    ./darwin-common.nix
-  ];
-
   config = {
     networking.hostName = "Ryans-MacBook-Pro";
     networking.computerName = "Ryans-MacBook-Pro";
