@@ -121,7 +121,7 @@
       taps = [ ];
       brews = [ ];
       casks = [
-        "ghostty"
+        "kitty"
         "orbstack"
         "raycast"
         "spotify"

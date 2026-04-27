@@ -23,7 +23,7 @@
       "/Applications/Brave Browser.app"
       "/Applications/Legcord.app"
       "/Applications/Spotify.app"
-      "/Applications/Ghostty.app"
+      "/Applications/kitty.app"
       "/Applications/Zed.app"
       "/Applications/Tailscale.app"
       "/System/Applications/System Settings.app"

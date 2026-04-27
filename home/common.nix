@@ -136,10 +136,9 @@
     recursive = true;
   };
 
-  # Ghostty
-  home.file.".config/ghostty/config.ghostty" = {
-    source = ../config/ghostty/config.ghostty;
-    recursive = true;
+  # Kitty
+  home.file.".config/kitty/kitty.conf" = {
+    source = ../config/kitty/kitty.conf;
   };
 
   # lazygit
@@ -156,11 +155,6 @@
   # Zed
   home.file.".config/zed/settings.json" = {
     source = ../config/zed/settings.json;
-  };
-
-  # OpenCode
-  home.file.".config/opencode/opencode.json" = {
-    source = ../config/opencode/opencode.json;
   };
 
   # Rectangle
