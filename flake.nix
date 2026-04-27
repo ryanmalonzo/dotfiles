@@ -27,12 +27,6 @@
           hostConfigPath = ./hosts/personal.nix;
           homeConfigPath = ./home/personal.nix;
         };
-        work = {
-          username = "ryan.malonzo";
-          homeDirectory = "/Users/ryan.malonzo";
-          hostConfigPath = ./hosts/work.nix;
-          homeConfigPath = ./home/work.nix;
-        };
       };
 
       mkDarwinSystem =

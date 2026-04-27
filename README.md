@@ -8,7 +8,7 @@ A declarative macOS system configuration using Nix Darwin and Home Manager.
 - **Application Management**: Homebrew integration for GUI applications
 - **Development Environment**: Shell configuration, development tools, and programming languages
 - **Dotfiles Management**: Centralized configuration for CLI tools and applications
-- **Multi-Host Support**: Separate configurations for personal and work machines
+- **Profile Support**: Easily add new profiles for different machines
 
 ## Prerequisites
 
@@ -106,6 +106,66 @@ After applying configuration changes, you may need to:
 - Run `source ~/.zshrc` to reload environment variables
 
 Some changes (like npm configuration) may require a new shell session to take effect.
+
+## Adding a profile
+
+1. Add an entry to the `profiles` attrset in `flake.nix`:
+
+```nix
+work = {
+  username = "your.username";
+  homeDirectory = "/Users/your.username";
+  hostConfigPath = ./hosts/work.nix;
+  homeConfigPath = ./home/work.nix;
+};
+```
+
+2. Create `hosts/work.nix` for host-level overrides (packages, hostname, Homebrew casks):
+
+```nix
+{ pkgs, ... }:
+{
+  config = {
+    networking.computerName = "your-machine-name";
+
+    environment.systemPackages = with pkgs; [
+      # profile-specific packages
+    ];
+  };
+}
+```
+
+3. Create `home/work.nix` for home-manager overrides (username, git signing key):
+
+```nix
+{ ... }:
+{
+  home.username = "your.username";
+  home.homeDirectory = "/Users/your.username";
+
+  imports = [
+    ./common.nix
+    ../programs/git/work.nix
+  ];
+}
+```
+
+4. Create `programs/git/work.nix` with the SSH signing key for that machine:
+
+```nix
+{ ... }:
+{
+  imports = [ ./common.nix ];
+
+  programs.git.signing.key = "/Users/your.username/.ssh/git.pub";
+}
+```
+
+5. Apply:
+
+```shell
+sudo darwin-rebuild switch --flake .#work
+```
 
 ## Acknowledgements
 
