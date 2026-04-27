@@ -1,4 +1,26 @@
 {
+  "project_panel": {
+    "dock": "left",
+  },
+  "outline_panel": {
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "dock": "left",
+  },
+  "agent": {
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "git_panel": {
+    "dock": "left",
+  },
+  "agent_servers": {
+    "claude-acp": {
+      "type": "registry",
+    },
+  },
   "session": {
     "trust_all_worktrees": true,
   },
@@ -8,9 +30,7 @@
   "calls": {
     "mute_on_join": true,
   },
-  "title_bar": {
-    "show_branch_icon": false,
-  },
+  "title_bar": {},
   "use_smartcase_search": true,
   "diagnostics": {
     "inline": {
@@ -57,4 +77,6 @@
       },
     },
   },
+  "show_wrap_guides": true,
+  "wrap_guides": [80],
 }
