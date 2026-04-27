@@ -7,15 +7,6 @@
 
     plugins = with pkgs.tmuxPlugins; [
       sensible
-      {
-        plugin = rose-pine;
-        extraConfig = ''
-          set -g @rose_pine_variant "main"
-          set -g @rose_pine_bar_bg_disable 'on'
-          set -g @rose_pine_bar_bg_disabled_color_option 'default'
-          set -g @rose_pine_show_current_program 'on'
-        '';
-      }
     ];
 
     extraConfig = ''
@@ -42,6 +33,10 @@
       bind -n S-Enter send-keys -H 1b 5b 31 33 3b 32 75
 
       set -g mouse on
+
+      set -g status-style bg=black,fg=white
+      set -g window-status-current-style bg=black,fg=white,bold
+      set -g window-status-style bg=black,fg=colour244
 
       # Start windows and panes at 1
       set -g base-index 1
