@@ -32,17 +32,12 @@
     lazygit
     inputs.neovim-nightly-overlay.packages.${pkgs.system}.default
     ripgrep
-    tree-sitter
-    tealdeer
     zoxide
 
     # Development tools
     cargo
     direnv
     fnm
-
-    # Lua tools
-    luarocks
 
     # Python tools
     black
@@ -51,14 +46,11 @@
 
     # Node tools
     nodejs
-    nodePackages.pnpm
-    nodePackages.typescript
 
     # Go tools
     go
 
     # Nix tools
-    colmena
     deadnix
     nixfmt-rfc-style
     nixd
