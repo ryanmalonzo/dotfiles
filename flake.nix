@@ -7,7 +7,6 @@
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
     home-manager.url = "github:nix-community/home-manager/release-25.11";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
-    neovim-nightly-overlay.url = "github:nix-community/neovim-nightly-overlay";
   };
 
   outputs =
@@ -49,7 +48,9 @@
               # https://github.com/NixOS/nixpkgs/issues/507531
               nixpkgs.overlays = [
                 (_final: prev: {
-                  direnv = prev.direnv.overrideAttrs (_: { doCheck = false; });
+                  direnv = prev.direnv.overrideAttrs (_: {
+                    doCheck = false;
+                  });
                 })
               ];
             }

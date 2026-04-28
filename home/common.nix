@@ -30,7 +30,7 @@
     gh
     glow
     lazygit
-    inputs.neovim-nightly-overlay.packages.${pkgs.system}.default
+    neovim
     ripgrep
     zoxide
 
