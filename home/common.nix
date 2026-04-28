@@ -30,7 +30,6 @@
     gh
     glow
     lazygit
-    neovim
     ripgrep
     zoxide
 

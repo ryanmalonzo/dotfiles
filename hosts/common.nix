@@ -119,7 +119,7 @@
         upgrade = true;
       };
       taps = [ ];
-      brews = [ ];
+      brews = [ "neovim" ];
       casks = [
         "kitty"
         "orbstack"
