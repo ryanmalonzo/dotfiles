@@ -21,6 +21,7 @@
         GH_TELEMETRY = "false";
       };
 
+      # Import aliases from separate file
       shellAliases = import ./aliases.nix;
 
       initContent = ''
@@ -29,7 +30,20 @@
 
         # zoxide
         eval "$(zoxide init zsh)"
+
+        # starship
+        eval "$(starship init zsh)"
       '';
+    };
+
+    # Shell prompt
+    starship = {
+      enable = true;
+      enableZshIntegration = true;
+      settings = {
+        add_newline = false;
+        direnv.disabled = false;
+      };
     };
 
     # Environment management
