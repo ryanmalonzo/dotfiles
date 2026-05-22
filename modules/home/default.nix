@@ -33,7 +33,6 @@
     csview
     deadnix
     delta
-    eza
     fd
     fnm
     fzf
@@ -69,6 +68,11 @@
   programs.zsh.initContent = lib.mkBefore ''
     eval "$(/opt/homebrew/bin/brew shellenv)"
   '';
+
+  home.file."Desktop/raycast.rayconfig".source = ../../config/raycast/raycast.rayconfig;
+  home.file."Library/Application Support/Rectangle/RectangleConfig.json".source =
+    ../../config/rectangle/RectangleConfig.json;
+  home.file.".config/zed/settings.json".source = ../../config/zed/settings.json;
 
   imports = [
     ./programs/bat.nix

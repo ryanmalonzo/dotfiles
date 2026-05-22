@@ -1,0 +1,82 @@
+{
+  "project_panel": {
+    "dock": "left",
+  },
+  "outline_panel": {
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "dock": "left",
+  },
+  "agent": {
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "git_panel": {
+    "dock": "left",
+  },
+  "agent_servers": {
+    "claude-acp": {
+      "type": "registry",
+    },
+  },
+  "session": {
+    "trust_all_worktrees": true,
+  },
+  "edit_predictions": {
+    "mode": "subtle",
+  },
+  "calls": {
+    "mute_on_join": true,
+  },
+  "title_bar": {},
+  "use_smartcase_search": true,
+  "diagnostics": {
+    "inline": {
+      "enabled": true,
+    },
+  },
+  "toolbar": {
+    "code_actions": true,
+  },
+  "relative_line_numbers": "enabled",
+  "vim_mode": true,
+  "base_keymap": "VSCode",
+  "buffer_font_family": "GeistMono Nerd Font Mono",
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "ui_font_size": 16,
+  "buffer_font_size": 15,
+  "theme": {
+    "mode": "system",
+    "light": "Ayu Light",
+    "dark": "Cursor Dark",
+  },
+  "auto_install_extensions": {
+    "html": true,
+    "terraform": true,
+    "prisma": true,
+    "nix": true,
+    "cursor": true,
+    "tsgo": true,
+    "lua": true,
+  },
+  "languages": {
+    "TypeScript": {
+      "language_servers": ["tsgo", "eslint"],
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true,
+      },
+    },
+    "TSX": {
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true,
+      },
+    },
+  },
+  "show_wrap_guides": true,
+  "wrap_guides": [80],
+}

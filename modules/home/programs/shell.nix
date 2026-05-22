@@ -21,10 +21,6 @@
     historySubstringSearch.enable = true;
 
     shellAliases = {
-      ls = "eza";
-      ll = "eza -l";
-      la = "eza -la";
-      lt = "eza --tree";
       cat = "bat";
       cd = "z";
       ci = "zi";
