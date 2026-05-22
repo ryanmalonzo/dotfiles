@@ -27,6 +27,7 @@
     LANG = "en_US.UTF-8";
     MANPAGER = "sh -c 'col -bx | bat -l man -p'";
     NPM_CONFIG_PREFIX = "$HOME/.npm-global";
+    SOPS_AGE_KEY_FILE = "${homeDirectory}/.config/sops/age/keys.txt";
   };
 
   home.packages = with pkgs; [
