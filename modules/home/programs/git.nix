@@ -1,6 +1,7 @@
 {
   gitName,
   gitEmail,
+  config,
   ...
 }:
 {
@@ -17,6 +18,8 @@
       fetch.prune = true;
       diff.algorithm = "histogram";
       gpg.format = "ssh";
+      user.signingKey = config.sops.secrets.git_signing_key.path;
+      commit.gpgSign = true;
       core.pager = "delta";
       interactive.diffFilter = "delta --color-only";
       delta.navigate = true;

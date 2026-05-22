@@ -1,6 +1,7 @@
 {
   lib,
   pkgs,
+  self,
   username,
   homeDirectory,
   ...
@@ -63,6 +64,12 @@
       "*.py".indent_size = 4;
       "*.{cmd,bat,ps1}".end_of_line = "crlf";
     };
+  };
+
+  sops = {
+    age.keyFile = "${homeDirectory}/.config/sops/age/keys.txt";
+    defaultSopsFile = "${self}/secrets/personal.yaml";
+    secrets.git_signing_key = { };
   };
 
   programs.zsh.initContent = lib.mkBefore ''

@@ -7,6 +7,8 @@
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
     home-manager.url = "github:nix-community/home-manager/release-25.11";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
+    sops-nix.url = "github:Mic92/sops-nix";
+    sops-nix.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs =
@@ -15,6 +17,7 @@
       nixpkgs,
       nix-darwin,
       home-manager,
+      sops-nix,
       ...
     }@inputs:
     let
@@ -28,7 +31,7 @@
         nix-darwin.lib.darwinSystem {
           inherit system;
           specialArgs = profile // {
-            inherit inputs;
+            inherit inputs self;
           };
           modules = [
             {
@@ -50,9 +53,13 @@
               home-manager.useUserPackages = true;
               home-manager.backupFileExtension = "backup";
               home-manager.extraSpecialArgs = profile // {
-                inherit inputs;
+                inherit inputs self;
               };
-              home-manager.users.${profile.username}.imports = [ ./modules/home/default.nix ] ++ homeModules;
+              home-manager.users.${profile.username}.imports = [
+                ./modules/home/default.nix
+                sops-nix.homeManagerModules.sops
+              ]
+              ++ homeModules;
             }
           ];
         };

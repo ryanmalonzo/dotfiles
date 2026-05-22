@@ -1,0 +1,7 @@
+keys:
+  - &personal age1q3dahfsk2432av2jy3mmwtwt0yep9g588qrhkpzswm22vxmv2sps4qlne2
+creation_rules:
+  - path_regex: secrets/personal\.yaml$
+    key_groups:
+      - age:
+        - *personal
