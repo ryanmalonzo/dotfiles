@@ -13,6 +13,7 @@
       extended = true;
     };
 
+    autosuggestion.enable = true;
     autosuggestion.strategy = [
       "match_prev_cmd"
       "history"
