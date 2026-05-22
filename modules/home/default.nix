@@ -29,20 +29,18 @@
   };
 
   home.packages = with pkgs; [
-    bat
     cargo
-    fnm
     csview
     deadnix
     delta
     eza
     fd
+    fnm
     fzf
     gh
     glow
     go
     jless
-    lazygit
     nixd
     nixfmt-rfc-style
     ripgrep
@@ -72,5 +70,12 @@
     eval "$(/opt/homebrew/bin/brew shellenv)"
   '';
 
-  imports = [ ./programs/shell.nix ];
+  imports = [
+    ./programs/bat.nix
+    ./programs/git.nix
+    ./programs/kitty.nix
+    ./programs/lazygit.nix
+    ./programs/shell.nix
+    ./programs/tmux.nix
+  ];
 }

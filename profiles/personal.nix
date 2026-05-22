@@ -4,6 +4,9 @@
   hostname = "Ryans-MacBook-Pro";
   timeZone = "Europe/Paris";
 
+  gitName = "Ryan Malonzo";
+  gitEmail = "64932650+ryanmalonzo@users.noreply.github.com";
+
   extraCasks = [
     "brave-browser"
     "claude-code"
