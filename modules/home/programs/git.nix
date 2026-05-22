@@ -1,10 +1,13 @@
 {
   gitName,
   gitEmail,
+  gitSigningKeyPub,
   config,
   ...
 }:
 {
+  home.file.".config/git/allowed_signers".text = "${gitEmail} ${gitSigningKeyPub}\n";
+
   programs.git = {
     enable = true;
     settings = {
@@ -23,6 +26,7 @@
       };
       fetch.prune = true;
       gpg.format = "ssh";
+      gpg.ssh.allowedSignersFile = "${config.home.homeDirectory}/.config/git/allowed_signers";
       init.defaultBranch = "main";
       interactive.diffFilter = "delta --color-only";
       merge.conflictstyle = "diff3";

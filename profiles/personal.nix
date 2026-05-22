@@ -6,6 +6,7 @@
 
   gitName = "Ryan Malonzo";
   gitEmail = "64932650+ryanmalonzo@users.noreply.github.com";
+  gitSigningKeyPub = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIA3VolUY+dMMyQoCZQS2XhWAgyEH9EFhiDsbWpH6IAod";
 
   extraCasks = [
     "brave-browser"
