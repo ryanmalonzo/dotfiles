@@ -88,7 +88,7 @@
       "kitty"
       "orbstack"
       "raycast"
-      "tailscale"
+      "tailscale-app"
       "spotify"
       "rectangle"
     ];

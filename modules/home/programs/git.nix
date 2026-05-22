@@ -7,25 +7,33 @@
 {
   programs.git = {
     enable = true;
-    userName = gitName;
-    userEmail = gitEmail;
-    extraConfig = {
-      init.defaultBranch = "main";
-      pull.rebase = true;
-      rebase.updateRefs = true;
-      core.editor = "nvim";
-      push.autoSetupRemote = true;
-      fetch.prune = true;
-      diff.algorithm = "histogram";
-      gpg.format = "ssh";
-      user.signingKey = config.sops.secrets.git_signing_key.path;
+    settings = {
       commit.gpgSign = true;
-      core.pager = "delta";
+      core = {
+        editor = "nvim";
+        pager = "delta";
+      };
+      delta = {
+        navigate = true;
+        side-by-side = true;
+      };
+      diff = {
+        algorithm = "histogram";
+        colorMoved = "default";
+      };
+      fetch.prune = true;
+      gpg.format = "ssh";
+      init.defaultBranch = "main";
       interactive.diffFilter = "delta --color-only";
-      delta.navigate = true;
-      delta.side-by-side = true;
       merge.conflictstyle = "diff3";
-      diff.colorMoved = "default";
+      pull.rebase = true;
+      push.autoSetupRemote = true;
+      rebase.updateRefs = true;
+      user = {
+        email = gitEmail;
+        name = gitName;
+        signingKey = config.sops.secrets.git_signing_key.path;
+      };
     };
   };
 }
