@@ -65,6 +65,8 @@
         };
     in
     {
+      formatter.aarch64-darwin = nixpkgs.legacyPackages.aarch64-darwin.nixfmt-rfc-style;
+
       darwinConfigurations.personal = mkSystem {
         profile = import ./profiles/personal.nix;
         darwinModules = [ ./modules/darwin/personal.nix ];
