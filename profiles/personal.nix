@@ -17,6 +17,9 @@
   ];
   extraBrews = [ "mole" ];
   brewCleanup = "zap";
+  extraMasApps = {
+    "HP Smart" = 1474276998; # HP: Print and Support
+  };
   dockApps = [
     "/Applications/Brave Browser.app"
     "/Applications/Legcord.app"
