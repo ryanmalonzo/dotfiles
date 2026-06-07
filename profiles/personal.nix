@@ -8,6 +8,8 @@
   gitEmail = "64932650+ryanmalonzo@users.noreply.github.com";
   gitSigningKeyPub = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIA3VolUY+dMMyQoCZQS2XhWAgyEH9EFhiDsbWpH6IAod";
 
+  brewCleanup = "zap";
+  extraBrews = [ "mole" ];
   extraCasks = [
     "brave-browser"
     "claude-code"
@@ -15,11 +17,10 @@
     "protonvpn"
     "zed"
   ];
-  extraBrews = [ "mole" ];
-  brewCleanup = "zap";
   extraMasApps = {
     "HP Smart" = 1474276998; # HP: Print and Support
   };
+
   dockApps = [
     "/Applications/Brave Browser.app"
     "/Applications/Legcord.app"

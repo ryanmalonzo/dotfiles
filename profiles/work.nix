@@ -8,6 +8,7 @@
   gitEmail = "ryan.malonzo@spendesk.com";
   gitSigningKeyPub = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIA3VolUY+dMMyQoCZQS2XhWAgyEH9EFhiDsbWpH6IAod";
 
+  extraBrews = [ "mole" ];
   extraCasks = [
     "brave-browser"
     "claude-code"
@@ -15,7 +16,7 @@
     "protonvpn"
     "zed"
   ];
-  extraBrews = [ "mole" ];
+
   dockApps = [
     "/Applications/Brave Browser.app"
     "/Applications/Legcord.app"
