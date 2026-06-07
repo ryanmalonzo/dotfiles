@@ -71,5 +71,10 @@
         profile = import ./profiles/personal.nix;
         darwinModules = [ ./modules/darwin/personal.nix ];
       };
+
+      darwinConfigurations.work = mkSystem {
+        profile = import ./profiles/work.nix;
+        darwinModules = [ ./modules/darwin/work.nix ];
+      };
     };
 }

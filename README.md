@@ -21,10 +21,13 @@ cd ~/dotfiles
 # 5. Restore age key from vault into ~/.config/sops/age/keys.txt
 
 # 6. First activation
+# Personal laptop:
 sudo nix run nix-darwin/nix-darwin-25.11#darwin-rebuild -- switch --flake .#personal
+# Work laptop:
+sudo nix run nix-darwin/nix-darwin-25.11#darwin-rebuild -- switch --flake .#work
 ```
 
-After the first switch, `darwin-rebuild switch --flake .#personal` works normally.
+After the first switch, `darwin-rebuild switch --flake .#<profile>` works normally.
 
 ## Secrets
 
@@ -39,7 +42,7 @@ sops secrets/personal.yaml
 ## Commands
 
 ```sh
-sudo darwin-rebuild switch --flake .#personal
+sudo darwin-rebuild switch --flake .#personal  # or .#work
 nix flake check
 nix fmt
 ```
