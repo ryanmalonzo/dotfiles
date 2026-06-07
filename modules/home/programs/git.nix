@@ -15,6 +15,7 @@
       core = {
         editor = "nvim";
         pager = "delta";
+        sshCommand = "ssh -i ${config.sops.secrets.git_signing_key.path} -o IdentitiesOnly=yes";
       };
       delta = {
         navigate = true;
