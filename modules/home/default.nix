@@ -69,7 +69,7 @@
 
   sops = {
     age.keyFile = "${homeDirectory}/.config/sops/age/keys.txt";
-    defaultSopsFile = "${self}/secrets/personal.yaml";
+    defaultSopsFile = "${self}/secrets/common.yaml";
     secrets.git_signing_key = { };
   };
 

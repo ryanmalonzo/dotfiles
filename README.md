@@ -36,7 +36,7 @@ Encrypted with [sops-nix](https://github.com/Mic92/sops-nix).
 To edit secrets (after first switch, `SOPS_AGE_KEY_FILE` is set automatically):
 
 ```sh
-sops secrets/personal.yaml
+sops secrets/common.yaml
 ```
 
 ## Commands
