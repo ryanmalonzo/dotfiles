@@ -1,7 +1,7 @@
 {
   username = "ryan.malonzo";
   homeDirectory = "/Users/ryan.malonzo";
-  hostname = "Ryans-MacBook-Pro";
+  hostname = "D46HNH3H22";
   timeZone = "Europe/Paris";
 
   gitName = "Ryan Malonzo";
