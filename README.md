@@ -21,13 +21,10 @@ cd ~/dotfiles
 # 5. Restore age key from vault into ~/.config/sops/age/keys.txt
 
 # 6. First activation
-# Personal laptop:
-sudo nix run nix-darwin/nix-darwin-25.11#darwin-rebuild -- switch --flake .#personal
-# Work laptop:
-sudo nix run nix-darwin/nix-darwin-25.11#darwin-rebuild -- switch --flake .#work
+sudo nix run nix-darwin/nix-darwin-26.05#darwin-rebuild -- switch --flake .#<profile>
 ```
 
-After the first switch, `darwin-rebuild switch --flake .#<profile>` works normally.
+After the first switch, use `sudo darwin-rebuild switch --flake .#<profile>` instead.
 
 ## Secrets
 

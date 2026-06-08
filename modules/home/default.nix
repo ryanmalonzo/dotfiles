@@ -42,7 +42,7 @@
     go
     jless
     nixd
-    nixfmt-rfc-style
+    nixfmt
     nodejs
     ripgrep
     ruff
