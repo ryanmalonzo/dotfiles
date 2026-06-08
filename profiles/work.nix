@@ -13,17 +13,17 @@
     "brave-browser"
     "claude-code"
     "legcord"
-    "protonvpn"
+    "tableplus"
     "zed"
   ];
 
   dockApps = [
     "/Applications/Brave Browser.app"
-    "/Applications/Legcord.app"
-    "/Applications/Spotify.app"
+    "/Applications/Slack.app"
     "/Applications/kitty.app"
     "/Applications/Zed.app"
-    "/Applications/Tailscale.app"
+    "/Applicatons/TablePlus.app"
+    "/Applications/Spotify.app"
     "/System/Applications/System Settings.app"
   ];
 }

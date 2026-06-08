@@ -11,9 +11,7 @@
   system.defaults.dock.persistent-apps = dockApps;
   environment.systemPackages = with pkgs; [
     age
-    biome
-    bun
     sops
-    terraform
+    yarn
   ];
 }
