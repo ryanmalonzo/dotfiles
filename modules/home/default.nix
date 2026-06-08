@@ -47,6 +47,7 @@
     ripgrep
     ruff
     statix
+    tfenv
     tree-sitter
     uv
   ];
