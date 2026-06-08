@@ -43,6 +43,7 @@
     jless
     nixd
     nixfmt-rfc-style
+    nodejs
     ripgrep
     ruff
     statix
