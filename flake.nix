@@ -75,6 +75,7 @@
       darwinConfigurations.work = mkSystem {
         profile = import ./profiles/work.nix;
         darwinModules = [ ./modules/darwin/work.nix ];
+        homeModules = [ ./modules/home/work.nix ];
       };
     };
 }
