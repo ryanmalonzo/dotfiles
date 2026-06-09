@@ -23,7 +23,7 @@
           yarn w server dev
           ;;
         web|frontend)
-          yarn dev:app
+          yarn dev
           ;;
         test:unit|tu)
           if [[ -z "$2" ]] || [[ -z "$3" ]]; then
