@@ -84,6 +84,7 @@
     enable = true;
     onActivation.autoUpdate = true;
     onActivation.upgrade = true;
+    brews = [ "mole" ];
     casks = [
       "kitty"
       "orbstack"
