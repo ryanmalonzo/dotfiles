@@ -93,6 +93,5 @@
       "spotify"
       "rectangle"
     ];
-    brews = [ "neovim" ];
   };
 }

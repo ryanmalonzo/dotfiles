@@ -41,6 +41,7 @@
     glow
     go
     jless
+    neovim
     nixd
     nixfmt
     nodejs
