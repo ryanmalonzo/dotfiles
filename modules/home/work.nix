@@ -16,5 +16,48 @@
     export GH_TOKEN=$(cat ${config.sops.secrets.gh_token.path})
     export LOKALISE_API_TOKEN=$(cat ${config.sops.secrets.lokalise_api_token.path})
     export NPM_TOKEN=$(cat ${config.sops.secrets.npm_token.path})
+
+    spx() {
+      case "$1" in
+        back|backend)
+          yarn w server dev
+          ;;
+        web|frontend)
+          yarn dev:app
+          ;;
+        test:unit|tu)
+          if [[ -z "$2" ]] || [[ -z "$3" ]]; then
+            echo "Usage: spx test:unit <package> <test-file-pattern>"
+            return 1
+          fi
+          local package="$2"
+          local test_file="$3"
+          if [[ "$package" == "server-fastify" ]]; then
+            yarn w server-fastify run-tests --path "$test_file"
+          else
+            yarn workspace "$package" test --testPathPattern="$test_file"
+          fi
+          ;;
+        test:service|ts)
+          if [[ -z "$2" ]]; then
+            echo "Usage: spx test:service <test-file-pattern>"
+            return 1
+          fi
+          yarn workspace server test:service --testPathPattern="$2"
+          ;;
+        migrate)
+          yarn migrate-all-dbs
+          ;;
+        *)
+          echo "Usage: spx <command> [args]"
+          echo "  back, backend              Run backend server"
+          echo "  web, frontend              Run frontend app"
+          echo "  test:unit, tu <pkg> <file> Run unit tests"
+          echo "  test:service, ts <file>    Run service tests"
+          echo "  migrate                    Run all database migrations"
+          return 1
+          ;;
+      esac
+    }
   '';
 }
