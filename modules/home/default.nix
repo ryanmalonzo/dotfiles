@@ -46,6 +46,7 @@
     nixfmt
     nodejs
     ripgrep
+    rtk
     ruff
     statix
     tfenv
