@@ -13,6 +13,8 @@
   sops.secrets.npm_token = { sopsFile = "${self}/secrets/work.yaml"; };
 
   programs.zsh.initContent = ''
+    alias dbc="node /Users/ryan.malonzo/dev/tableplus-helpers/dist/cli.js"
+
     export GH_TOKEN=$(cat ${config.sops.secrets.gh_token.path})
     export LOKALISE_API_TOKEN=$(cat ${config.sops.secrets.lokalise_api_token.path})
     export NPM_TOKEN=$(cat ${config.sops.secrets.npm_token.path})
