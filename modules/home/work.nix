@@ -6,6 +6,7 @@
 {
   home.sessionVariables = {
     DEVENV_SKIP_SPX = "true";
+    VAULT_ADDR = "https://vault-k8s.tools.spendesk.services";
   };
 
   sops.secrets.gh_token = { sopsFile = "${self}/secrets/work.yaml"; };
