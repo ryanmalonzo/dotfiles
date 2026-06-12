@@ -14,6 +14,7 @@
     "claude-code"
     "legcord"
     "tableplus"
+    "yubico-authenticator"
     "zed"
   ];
 
