@@ -10,6 +10,7 @@
   };
 
   sops.secrets.gh_token = { sopsFile = "${self}/secrets/work.yaml"; };
+  sops.secrets.github_token = { sopsFile = "${self}/secrets/work.yaml"; };
   sops.secrets.lokalise_api_token = { sopsFile = "${self}/secrets/work.yaml"; };
   sops.secrets.npm_token = { sopsFile = "${self}/secrets/work.yaml"; };
 
@@ -17,6 +18,7 @@
     alias dbc="node /Users/ryan.malonzo/dev/tableplus-helpers/dist/cli.js"
 
     export GH_TOKEN=$(cat ${config.sops.secrets.gh_token.path})
+    export GITHUB_TOKEN=$(cat ${config.sops.secrets.github_token.path})
     export LOKALISE_API_TOKEN=$(cat ${config.sops.secrets.lokalise_api_token.path})
     export NPM_TOKEN=$(cat ${config.sops.secrets.npm_token.path})
 
