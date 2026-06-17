@@ -35,7 +35,6 @@
     deadnix
     delta
     fd
-    fnm
     fzf
     gh
     glow

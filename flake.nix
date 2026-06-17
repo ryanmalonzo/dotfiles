@@ -70,6 +70,7 @@
       darwinConfigurations.personal = mkSystem {
         profile = import ./profiles/personal.nix;
         darwinModules = [ ./modules/darwin/personal.nix ];
+        homeModules = [ ./modules/home/personal.nix ];
       };
 
       darwinConfigurations.work = mkSystem {

@@ -4,9 +4,12 @@
   ...
 }:
 {
+  home.sessionPath = [ "$HOME/.volta/bin" ];
+
   home.sessionVariables = {
     DEVENV_SKIP_SPX = "true";
     VAULT_ADDR = "https://vault-k8s.tools.spendesk.services";
+    VOLTA_HOME = "$HOME/.volta";
   };
 
   sops.secrets.gh_token = { sopsFile = "${self}/secrets/work.yaml"; };

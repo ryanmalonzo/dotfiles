@@ -18,6 +18,7 @@
     age
     biome
     bun
+    fnm
     sops
     terraform
   ];
