@@ -92,6 +92,7 @@
       "tailscale-app"
       "spotify"
       "rectangle"
+      "yaak"
     ];
   };
 }
