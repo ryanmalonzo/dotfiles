@@ -23,6 +23,7 @@
   home.sessionVariables = {
     DO_NOT_TRACK = "true";
     EDITOR = "nvim";
+    ENABLE_LSP_TOOL = "1";
     GH_TELEMETRY = "false";
     LANG = "en_US.UTF-8";
     NPM_CONFIG_PREFIX = "$HOME/.npm-global";
