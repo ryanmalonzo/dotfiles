@@ -68,5 +68,10 @@
           ;;
       esac
     }
+
+    vlogin() {
+      local role=''${1:-vault-spx-dev}
+      vault login -method=oidc -path=okta role="$role"
+    }
   '';
 }
