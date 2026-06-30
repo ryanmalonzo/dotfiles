@@ -20,7 +20,6 @@
   programs.zsh.initContent = ''
     alias dbc="node /Users/ryan.malonzo/dev/tableplus-helpers/dist/cli.js"
 
-    export AWS_PROFILE=claude-code
     export GH_TOKEN=$(cat ${config.sops.secrets.gh_token.path})
     export GITHUB_TOKEN=$(cat ${config.sops.secrets.github_token.path})
     export LOKALISE_API_TOKEN=$(cat ${config.sops.secrets.lokalise_api_token.path})
