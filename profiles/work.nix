@@ -10,6 +10,7 @@
 
   extraBrews = [
     "cloudflared"
+    "python@3.13"
     "vault"
   ];
   extraCasks = [
