@@ -16,6 +16,7 @@
   fonts.fontconfig.enable = true;
 
   home.sessionPath = [
+    "$HOME/.local/bin"
     "$HOME/.npm-global/bin"
     "$HOME/go/bin"
   ];
