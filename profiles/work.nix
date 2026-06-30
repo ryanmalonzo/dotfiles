@@ -13,14 +13,9 @@
     "vault"
   ];
   extraCasks = [
-    "brave-browser"
-    "claude"
-    "claude-code"
-    "legcord"
     "postman"
     "tableplus"
     "yubico-authenticator"
-    "zed"
   ];
 
   dockApps = [

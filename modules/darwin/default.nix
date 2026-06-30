@@ -86,13 +86,18 @@
     onActivation.upgrade = true;
     brews = [ "mole" "pipx" ];
     casks = [
+      "brave-browser"
+      "claude"
+      "claude-code"
       "kitty"
+      "legcord"
       "orbstack"
       "raycast"
-      "tailscale-app"
-      "spotify"
       "rectangle"
+      "spotify"
+      "tailscale-app"
       "yaak"
+      "zed"
     ];
   };
 }

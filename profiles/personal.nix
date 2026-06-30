@@ -11,12 +11,7 @@
   brewCleanup = "zap";
   extraBrews = [];
   extraCasks = [
-    "brave-browser"
-    "claude"
-    "claude-code"
-    "legcord"
     "protonvpn"
-    "zed"
   ];
   extraMasApps = {
     "HP Smart" = 1474276998; # HP: Print and Support
