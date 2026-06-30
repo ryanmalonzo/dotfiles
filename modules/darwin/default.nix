@@ -80,13 +80,11 @@
 
   fonts.packages = [ pkgs.nerd-fonts.geist-mono ];
 
-  environment.systemPackages = with pkgs; [ pipx ];
-
   homebrew = {
     enable = true;
     onActivation.autoUpdate = true;
     onActivation.upgrade = true;
-    brews = [ "mole" ];
+    brews = [ "mole" "pipx" ];
     casks = [
       "kitty"
       "orbstack"
