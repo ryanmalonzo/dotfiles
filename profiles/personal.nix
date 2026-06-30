@@ -12,6 +12,7 @@
   extraBrews = [];
   extraCasks = [
     "brave-browser"
+    "claude"
     "claude-code"
     "legcord"
     "protonvpn"
