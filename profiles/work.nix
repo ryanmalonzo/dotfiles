@@ -8,11 +8,16 @@
   gitEmail = "ryan.malonzo@spendesk.com";
   gitSigningKeyPub = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIA3VolUY+dMMyQoCZQS2XhWAgyEH9EFhiDsbWpH6IAod";
 
-  extraBrews = [];
+  extraBrews = [
+    "cloudflared"
+    "vault"
+  ];
   extraCasks = [
     "brave-browser"
+    "claude"
     "claude-code"
     "legcord"
+    "postman"
     "tableplus"
     "yubico-authenticator"
     "zed"
