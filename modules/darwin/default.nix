@@ -80,6 +80,8 @@
 
   fonts.packages = [ pkgs.nerd-fonts.geist-mono ];
 
+  environment.systemPackages = with pkgs; [ pipx ];
+
   homebrew = {
     enable = true;
     onActivation.autoUpdate = true;
