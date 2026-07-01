@@ -4,7 +4,6 @@
     biome
     bun
     fnm
-    terraform
   ];
 
   programs.zsh.initContent = ''
