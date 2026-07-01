@@ -83,6 +83,11 @@
     eval "$(/opt/homebrew/bin/brew shellenv)"
   '';
 
+  home.activation.installTypescriptLanguageServer = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
+    export NPM_CONFIG_PREFIX="$HOME/.npm-global"
+    ${pkgs.nodejs}/bin/npm install -g typescript-language-server
+  '';
+
   home.file."Desktop/raycast.rayconfig".source = ../../config/raycast/raycast.rayconfig;
   home.file."Library/Application Support/Rectangle/RectangleConfig.json".source =
     ../../config/rectangle/RectangleConfig.json;
