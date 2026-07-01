@@ -1,4 +1,5 @@
 {
+  lib,
   pkgs,
   self,
   config,
@@ -20,6 +21,10 @@
     VAULT_ADDR = "https://vault-k8s.tools.spendesk.services";
     VOLTA_HOME = "$HOME/.volta";
   };
+
+  home.activation.installHeadroom = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
+    /opt/homebrew/bin/pipx install 'headroom-ai[all]' --python ${pkgs.python313}/bin/python3.13
+  '';
 
   sops.secrets.gh_token = { sopsFile = "${self}/secrets/work.yaml"; };
   sops.secrets.github_token = { sopsFile = "${self}/secrets/work.yaml"; };
