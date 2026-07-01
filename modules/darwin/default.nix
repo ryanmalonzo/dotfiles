@@ -88,7 +88,7 @@
     casks = [
       "brave-browser"
       "claude"
-      "claude-code"
+      "claude-code@latest"
       "kitty"
       "legcord"
       "orbstack"
