@@ -32,6 +32,7 @@
   };
 
   home.packages = with pkgs; [
+    age
     cargo
     csview
     deadnix
@@ -48,6 +49,7 @@
     nodejs
     ripgrep
     ruff
+    sops
     statix
     tfenv
     tree-sitter

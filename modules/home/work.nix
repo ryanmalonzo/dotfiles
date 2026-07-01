@@ -1,9 +1,17 @@
 {
+  pkgs,
   self,
   config,
   ...
 }:
 {
+  home.packages = with pkgs; [
+    python313
+    vault
+    volta
+    yarn
+  ];
+
   home.sessionPath = [ "$HOME/.volta/bin" ];
 
   home.sessionVariables = {
