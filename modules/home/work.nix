@@ -7,6 +7,7 @@
 }:
 {
   home.packages = with pkgs; [
+    ngrok
     python313
     rtk
     vault
