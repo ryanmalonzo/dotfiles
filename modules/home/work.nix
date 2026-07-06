@@ -35,6 +35,7 @@
   programs.zsh.initContent = ''
     alias dbc="node /Users/ryan.malonzo/dev/tableplus-helpers/dist/cli.js"
     alias chr="ANTHROPIC_BASE_URL=http://127.0.0.1:8787 claude"
+    alias ff="/Users/ryan.malonzo/dev/firefighting-time-tracker/ff"
     alias start-headroom="headroom proxy --port 8787"
 
     export GH_TOKEN=$(cat ${config.sops.secrets.gh_token.path})
