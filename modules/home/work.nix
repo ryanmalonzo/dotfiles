@@ -90,5 +90,29 @@
       local role=''${1:-vault-spx-dev}
       vault login -method=oidc -path=okta role="$role"
     }
+
+    forest() {
+      local model
+      case "$1" in
+        company)
+          model="Company"
+          ;;
+        user)
+          model="User"
+          ;;
+        card)
+          model="Card"
+          ;;
+        *)
+          echo "Usage: forest <company|user|card> <id>"
+          return 1
+          ;;
+      esac
+      if [[ -z "$2" ]]; then
+        echo "Usage: forest $1 <id>"
+        return 1
+      fi
+      open "https://app.forestadmin.com/Spendesk/Production/Spendesk%20(Read)/data/$model/index/record/$model/$2/summary"
+    }
   '';
 }
