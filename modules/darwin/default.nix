@@ -78,7 +78,7 @@
   system.startup.chime = false;
   power.restartAfterFreeze = true;
 
-  fonts.packages = [ pkgs.nerd-fonts.geist-mono ];
+  fonts.packages = [ pkgs.nerd-fonts._0xproto ];
 
   homebrew = {
     enable = true;
