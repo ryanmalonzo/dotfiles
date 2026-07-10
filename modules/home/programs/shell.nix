@@ -21,9 +21,14 @@
     ];
     historySubstringSearch.enable = true;
 
+    initContent = ''
+      if [[ -z "$CLAUDECODE" ]]; then
+        alias cd='z'
+      fi
+    '';
+
     shellAliases = {
       cat = "bat";
-      cd = "z";
       ci = "zi";
       ccopy = "pbcopy < ";
       cpaste = "pbpaste";
