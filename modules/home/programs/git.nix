@@ -8,6 +8,17 @@
 {
   home.file.".config/git/allowed_signers".text = "${gitEmail} ${gitSigningKeyPub}\n";
 
+  programs.ssh = {
+    enable = true;
+    # Must stay first in the generated config; OrbStack requires its Include
+    # to precede any Host/Match blocks.
+    includes = [ "~/.orbstack/ssh/config" ];
+    matchBlocks."github.com" = {
+      identitiesOnly = true;
+      identityFile = config.sops.secrets.git_signing_key.path;
+    };
+  };
+
   programs.git = {
     enable = true;
     settings = {
@@ -15,7 +26,6 @@
       core = {
         editor = "nvim";
         pager = "delta";
-        sshCommand = "ssh -i ${config.sops.secrets.git_signing_key.path} -o IdentitiesOnly=yes";
       };
       delta = {
         navigate = true;
