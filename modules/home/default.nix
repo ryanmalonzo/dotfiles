@@ -51,7 +51,6 @@
     ruff
     sops
     statix
-    tfenv
     tree-sitter
     uv
   ];
