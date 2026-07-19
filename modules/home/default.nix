@@ -44,6 +44,7 @@
     glow
     go
     jless
+    kubectl
     neovim
     nixd
     nixfmt
