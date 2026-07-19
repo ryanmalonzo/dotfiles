@@ -33,6 +33,7 @@
 
   home.packages = with pkgs; [
     age
+    argocd
     cargo
     csview
     deadnix
