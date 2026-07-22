@@ -1,5 +1,4 @@
 {
-  lib,
   pkgs,
   self,
   config,
@@ -8,7 +7,6 @@
 {
   home.packages = with pkgs; [
     ngrok
-    python313
     rtk
     vault
     volta
@@ -23,10 +21,6 @@
     VOLTA_HOME = "$HOME/.volta";
   };
 
-  home.activation.installHeadroom = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
-    /opt/homebrew/bin/pipx install 'headroom-ai[all]' --python ${pkgs.python313}/bin/python3.13
-  '';
-
   sops.secrets.gh_token = { sopsFile = "${self}/secrets/work.yaml"; };
   sops.secrets.github_token = { sopsFile = "${self}/secrets/work.yaml"; };
   sops.secrets.lokalise_api_token = { sopsFile = "${self}/secrets/work.yaml"; };
@@ -34,9 +28,7 @@
 
   programs.zsh.initContent = ''
     alias dbc="node /Users/ryan.malonzo/dev/tableplus-helpers/dist/cli.js"
-    alias chr="ANTHROPIC_BASE_URL=http://127.0.0.1:8787 claude"
     alias ff="/Users/ryan.malonzo/dev/firefighting-time-tracker/ff"
-    alias start-headroom="headroom proxy --port 8787"
 
     export GH_TOKEN=$(cat ${config.sops.secrets.gh_token.path})
     export GITHUB_TOKEN=$(cat ${config.sops.secrets.github_token.path})

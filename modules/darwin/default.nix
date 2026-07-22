@@ -87,7 +87,7 @@
     # tfenv is a brew (not a Nixpkgs) package: the Nix store is read-only, so
     # tfenv's own installer can't write installed Terraform versions under its
     # nixpkgs-provided share dir, breaking `tfenv install`/`tfenv use`.
-    brews = [ "mole" "pipx" "tfenv" ];
+    brews = [ "mole" "tfenv" ];
     casks = [
       "brave-browser"
       "claude"
