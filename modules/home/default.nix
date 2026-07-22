@@ -53,6 +53,7 @@
     ruff
     sops
     statix
+    tree
     tree-sitter
     uv
   ];
