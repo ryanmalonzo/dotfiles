@@ -45,6 +45,7 @@
     go
     jless
     kubectl
+    kubeseal
     neovim
     nixd
     nixfmt
