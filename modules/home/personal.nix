@@ -7,6 +7,13 @@
     identityFile = "~/.ssh/chaldea";
   };
 
+  programs.ssh.matchBlocks."pangolin" = {
+    hostname = "217.154.121.137";
+    user = "ren";
+    port = 2222;
+    identityFile = "~/.ssh/pangolin";
+  };
+
   home.packages = with pkgs; [
     biome
     bun
