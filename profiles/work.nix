@@ -10,6 +10,7 @@
 
   extraBrews = [
     "cloudflared" # nixpkgs package doesn't build on 26.05
+    "datadog-labs/pack/pup"
   ];
   extraCasks = [
     "postman"

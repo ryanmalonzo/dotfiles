@@ -84,6 +84,9 @@
     enable = true;
     onActivation.autoUpdate = true;
     onActivation.upgrade = true;
+    onActivation.extraEnv = {
+      HOMEBREW_NO_REQUIRE_TAP_TRUST = "1";
+    };
     # tfenv is a brew (not a Nixpkgs) package: the Nix store is read-only, so
     # tfenv's own installer can't write installed Terraform versions under its
     # nixpkgs-provided share dir, breaking `tfenv install`/`tfenv use`.
