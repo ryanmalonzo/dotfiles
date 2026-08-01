@@ -97,7 +97,6 @@
       "claude-code@latest"
       "discord"
       "ghostty"
-      "kitty"
       "orbstack"
       "raycast"
       "spotify"

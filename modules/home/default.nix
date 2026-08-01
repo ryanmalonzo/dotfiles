@@ -98,7 +98,6 @@
   imports = [
     ./programs/bat.nix
     ./programs/git.nix
-    ./programs/kitty.nix
     ./programs/lazygit.nix
     ./programs/shell.nix
   ];
