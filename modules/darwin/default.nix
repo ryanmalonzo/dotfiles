@@ -78,7 +78,7 @@
   system.startup.chime = false;
   power.restartAfterFreeze = true;
 
-  fonts.packages = [ pkgs.nerd-fonts._0xproto ];
+  fonts.packages = [ pkgs.maple-mono.NF ];
 
   homebrew = {
     enable = true;
