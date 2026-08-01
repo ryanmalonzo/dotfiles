@@ -92,8 +92,6 @@
   '';
 
   home.file."Desktop/raycast.rayconfig".source = ../../config/raycast/raycast.rayconfig;
-  home.file."Library/Application Support/Rectangle/RectangleConfig.json".source =
-    ../../config/rectangle/RectangleConfig.json;
 
   imports = [
     ./programs/bat.nix

@@ -99,7 +99,6 @@
       "kitty"
       "orbstack"
       "raycast"
-      "rectangle"
       "spotify"
       "tailscale-app"
       "yaak"
