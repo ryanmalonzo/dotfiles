@@ -101,6 +101,5 @@
     ./programs/kitty.nix
     ./programs/lazygit.nix
     ./programs/shell.nix
-    ./programs/tmux.nix
   ];
 }
