@@ -52,6 +52,8 @@
 
     loginwindow.GuestEnabled = false;
 
+    spaces.spans-displays = true;
+
     screencapture = {
       target = "clipboard";
       type = "png";
