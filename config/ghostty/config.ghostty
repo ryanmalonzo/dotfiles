@@ -1,0 +1,16 @@
+font-size = 15
+
+theme = light:Rose Pine Dawn,dark:Rose Pine
+
+cursor-style = block
+
+mouse-hide-while-typing = true
+
+background-opacity = 0.9
+background-blur = true
+
+window-padding-x = 20
+window-padding-y = 20
+window-padding-balance = true
+
+shell-integration-features = no-cursor,ssh-env

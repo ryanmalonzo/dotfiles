@@ -21,7 +21,7 @@
   dockApps = [
     "/Applications/Brave Browser.app"
     "/Applications/Slack.app"
-    "/Applications/kitty.app"
+    "/Applications/Ghostty.app"
     "/Applications/Zed.app"
     "/Applicatons/TablePlus.app"
     "/Applications/Spotify.app"

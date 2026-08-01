@@ -93,6 +93,8 @@
 
   home.file."Desktop/raycast.rayconfig".source = ../../config/raycast/raycast.rayconfig;
 
+  home.file.".config/ghostty/config.ghostty".source = ../../config/ghostty/config.ghostty;
+
   imports = [
     ./programs/bat.nix
     ./programs/git.nix
