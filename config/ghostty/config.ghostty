@@ -1,5 +1,5 @@
 font-family = Maple Mono NF
-font-feature = -calt
+font-feature = -calt, cv01, cv02, cv32, cv35, ss03
 font-size = 15
 
 theme = light:Rose Pine Dawn,dark:Rose Pine
