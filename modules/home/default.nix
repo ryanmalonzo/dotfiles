@@ -95,6 +95,8 @@
 
   home.file.".config/ghostty/config.ghostty".source = ../../config/ghostty/config.ghostty;
 
+  home.file.".aerospace.toml".source = ../../config/aerospace/.aerospace.toml;
+
   imports = [
     ./programs/bat.nix
     ./programs/git.nix
