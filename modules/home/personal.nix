@@ -1,17 +1,17 @@
 { pkgs, ... }:
 {
-  programs.ssh.matchBlocks."chaldea" = {
-    hostname = "192.168.1.35";
-    user = "ren";
-    port = 2222;
-    identityFile = "~/.ssh/chaldea";
+  programs.ssh.settings."chaldea" = {
+    HostName = "192.168.1.35";
+    User = "ren";
+    Port = 2222;
+    IdentityFile = "~/.ssh/chaldea";
   };
 
-  programs.ssh.matchBlocks."pangolin" = {
-    hostname = "217.154.121.137";
-    user = "ren";
-    port = 2222;
-    identityFile = "~/.ssh/pangolin";
+  programs.ssh.settings."pangolin" = {
+    HostName = "217.154.121.137";
+    User = "ren";
+    Port = 2222;
+    IdentityFile = "~/.ssh/pangolin";
   };
 
   home.packages = with pkgs; [

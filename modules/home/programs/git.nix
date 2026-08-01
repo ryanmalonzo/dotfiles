@@ -10,12 +10,25 @@
 
   programs.ssh = {
     enable = true;
+    enableDefaultConfig = false;
     # Must stay first in the generated config; OrbStack requires its Include
     # to precede any Host/Match blocks.
     includes = [ "~/.orbstack/ssh/config" ];
-    matchBlocks."github.com" = {
-      identitiesOnly = true;
-      identityFile = config.sops.secrets.git_signing_key.path;
+    settings."*" = {
+      ForwardAgent = false;
+      AddKeysToAgent = "no";
+      Compression = false;
+      ServerAliveInterval = 0;
+      ServerAliveCountMax = 3;
+      HashKnownHosts = false;
+      UserKnownHostsFile = "~/.ssh/known_hosts";
+      ControlMaster = "no";
+      ControlPath = "~/.ssh/master-%r@%n:%p";
+      ControlPersist = "no";
+    };
+    settings."github.com" = {
+      IdentitiesOnly = true;
+      IdentityFile = config.sops.secrets.git_signing_key.path;
     };
   };
 
