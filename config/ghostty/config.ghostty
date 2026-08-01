@@ -16,3 +16,6 @@ window-padding-y = 20
 window-padding-balance = true
 
 shell-integration-features = no-cursor, ssh-env
+
+title = " "
+macos-titlebar-proxy-icon = hidden
