@@ -97,6 +97,7 @@
       "claude-code@latest"
       "discord"
       "ghostty"
+      "nikitabobko/tap/aerospace"
       "orbstack"
       "raycast"
       "spotify"
