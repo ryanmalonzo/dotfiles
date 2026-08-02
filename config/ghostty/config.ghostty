@@ -4,6 +4,8 @@ font-size = 16
 
 theme = light:Rose Pine Dawn,dark:Rose Pine
 
+minimum-contrast = 1.3
+
 cursor-style = block
 
 mouse-hide-while-typing = true
