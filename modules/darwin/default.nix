@@ -93,7 +93,7 @@
     # tfenv's own installer can't write installed Terraform versions under its
     # nixpkgs-provided share dir, breaking `tfenv install`/`tfenv use`.
     taps = [ "FelixKratz/formulae" ];
-    brews = [ "borders" "mole" "tfenv" ];
+    brews = [ "borders" "hunk" "mole" "tfenv" ];
     casks = [
       "brave-browser"
       "claude"

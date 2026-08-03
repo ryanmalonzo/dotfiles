@@ -39,6 +39,7 @@
       gp = "git pull";
       gps = "git pull && git switch";
       gs = "git switch";
+      hdiff = "hunk diff $(git symbolic-ref refs/remotes/origin/HEAD | sed \"s@^refs/remotes/origin/@@\")...HEAD";
       lg = "lazygit";
       vi = "nvim";
       vim = "nvim";
