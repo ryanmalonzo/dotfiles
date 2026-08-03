@@ -98,6 +98,8 @@
 
   home.file.".aerospace.toml".source = ../../config/aerospace/.aerospace.toml;
 
+  home.file.".config/hunk/config.toml".source = ../../config/hunk/config.toml;
+
   imports = [
     ./programs/bat.nix
     ./programs/git.nix
