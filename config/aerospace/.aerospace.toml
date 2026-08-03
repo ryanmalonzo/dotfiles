@@ -21,6 +21,14 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 
 automatically-unhide-macos-hidden-apps = true
 
+on-window-detected = [
+    { if.app-id = 'com.tinyspeck.slackmacgap', run = 'move-node-to-workspace 1' },
+    { if.app-id = 'com.brave.Browser', run = 'move-node-to-workspace 2' },
+    { if.app-id = 'com.mitchellh.ghostty', run = 'move-node-to-workspace 3' },
+    { if.app-id = 'com.hnc.Discord', run = 'move-node-to-workspace 4' },
+    { if.app-id = 'com.spotify.client', run = 'move-node-to-workspace 5' },
+]
+
 focus-follows-mouse.enabled = false
 
 key-mapping.preset = 'qwerty'
@@ -71,3 +79,10 @@ gaps.outer.right =      16
     alt-space = 'fullscreen'
     alt-q = 'close'
     alt-r = 'reload-config'
+
+[workspace-to-monitor-force-assignment]
+    1 = 'main'
+    2 = 'main'
+    3 = 'secondary'
+    4 = 'main'
+    5 = 'main'
