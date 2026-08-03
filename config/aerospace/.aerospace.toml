@@ -76,6 +76,7 @@ gaps.outer.right =      16
 
     alt-shift-i = '''exec-and-forget osascript -e 'tell application "Ghostty" to new window' '''
     alt-shift-b = 'exec-and-forget open -na "Brave Browser"'
+    alt-shift-m = 'move-workspace-to-monitor --wrap-around next'
     alt-space = 'fullscreen'
     alt-q = 'close'
     alt-r = 'reload-config'
