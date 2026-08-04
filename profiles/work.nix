@@ -9,7 +9,6 @@
   gitSigningKeyPub = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIA3VolUY+dMMyQoCZQS2XhWAgyEH9EFhiDsbWpH6IAod";
 
   extraBrews = [
-    "cloudflared" # nixpkgs package doesn't build on 26.05
     "datadog-labs/pack/pup"
   ];
   extraCasks = [
