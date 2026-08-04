@@ -22,7 +22,7 @@
     "/Applications/Slack.app"
     "/Applications/Ghostty.app"
     "/Applications/Zed.app"
-    "/Applicatons/TablePlus.app"
+    "/Applications/TablePlus.app"
     "/Applications/Spotify.app"
     "/System/Applications/System Settings.app"
   ];
