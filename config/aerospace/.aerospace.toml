@@ -74,6 +74,16 @@ gaps.outer.right =      16
     alt-shift-8 = 'move-node-to-workspace 8'
     alt-shift-9 = 'move-node-to-workspace 9'
 
+    ctrl-shift-1 = ['move-node-to-workspace 1 --focus-follows-window', 'fullscreen on']
+    ctrl-shift-2 = ['move-node-to-workspace 2 --focus-follows-window', 'fullscreen on']
+    ctrl-shift-3 = ['move-node-to-workspace 3 --focus-follows-window', 'fullscreen on']
+    ctrl-shift-4 = ['move-node-to-workspace 4 --focus-follows-window', 'fullscreen on']
+    ctrl-shift-5 = ['move-node-to-workspace 5 --focus-follows-window', 'fullscreen on']
+    ctrl-shift-6 = ['move-node-to-workspace 6 --focus-follows-window', 'fullscreen on']
+    ctrl-shift-7 = ['move-node-to-workspace 7 --focus-follows-window', 'fullscreen on']
+    ctrl-shift-8 = ['move-node-to-workspace 8 --focus-follows-window', 'fullscreen on']
+    ctrl-shift-9 = ['move-node-to-workspace 9 --focus-follows-window', 'fullscreen on']
+
     alt-shift-i = '''exec-and-forget osascript -e 'tell application "Ghostty" to new window' '''
     alt-shift-b = 'exec-and-forget open -na "Brave Browser"'
     alt-shift-m = 'move-workspace-to-monitor --wrap-around next'
