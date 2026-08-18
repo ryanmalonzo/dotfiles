@@ -23,7 +23,6 @@
 
   home.sessionVariables = {
     CLAUDE_CODE_AUTO_CONNECT_IDE = "1";
-    DO_NOT_TRACK = "true";
     EDITOR = "nvim";
     ENABLE_LSP_TOOL = "1";
     GH_TELEMETRY = "false";
