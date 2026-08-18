@@ -7,7 +7,6 @@
 {
   home.packages = with pkgs; [
     ngrok
-    rtk
     vault
     volta
     yarn
