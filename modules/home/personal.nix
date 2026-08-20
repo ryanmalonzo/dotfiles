@@ -3,7 +3,7 @@
   programs.ssh.settings."chaldea" = {
     HostName = "192.168.1.35";
     User = "ren";
-    Port = 22;
+    Port = 2222;
     IdentityFile = "~/.ssh/chaldea";
   };
 
