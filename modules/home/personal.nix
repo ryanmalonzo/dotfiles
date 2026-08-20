@@ -3,15 +3,8 @@
   programs.ssh.settings."chaldea" = {
     HostName = "192.168.1.35";
     User = "ren";
-    Port = 2222;
+    Port = 22;
     IdentityFile = "~/.ssh/chaldea";
-  };
-
-  programs.ssh.settings."pangolin" = {
-    HostName = "217.154.121.137";
-    User = "ren";
-    Port = 2222;
-    IdentityFile = "~/.ssh/pangolin";
   };
 
   home.packages = with pkgs; [
