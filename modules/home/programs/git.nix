@@ -34,6 +34,7 @@
 
   programs.git = {
     enable = true;
+    ignores = [ ".serena/" ];
     settings = {
       commit.gpgSign = true;
       core = {
