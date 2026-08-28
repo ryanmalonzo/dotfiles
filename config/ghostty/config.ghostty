@@ -8,6 +8,7 @@ minimum-contrast = 1.3
 
 cursor-style = block
 
+copy-on-select = clipboard
 mouse-hide-while-typing = true
 
 background-opacity = 0.9
