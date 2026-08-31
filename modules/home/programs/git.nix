@@ -57,14 +57,7 @@
       merge.conflictstyle = "diff3";
       pull.rebase = true;
       push.autoSetupRemote = true;
-      rebase = {
-        autoStash = true;
-        updateRefs = true;
-      };
-      rerere = {
-        enabled = true;
-        autoUpdate = true;
-      };
+      rebase.updateRefs = true;
       user = {
         email = gitEmail;
         name = gitName;
