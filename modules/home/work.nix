@@ -16,7 +16,6 @@
 
   home.sessionVariables = {
     DD_SITE = "datadoghq.eu";
-    DEVENV_SKIP_SPX = "true";
     VAULT_ADDR = "https://vault-k8s.tools.spendesk.services";
     VOLTA_HOME = "$HOME/.volta";
   };
