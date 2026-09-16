@@ -26,9 +26,6 @@
   sops.secrets.npm_token = { sopsFile = "${self}/secrets/work.yaml"; };
 
   programs.zsh.initContent = ''
-    alias dbc="node /Users/ryan.malonzo/dev/tableplus-helpers/dist/cli.js"
-    alias ff="/Users/ryan.malonzo/dev/firefighting-time-tracker/ff"
-
     export GH_TOKEN=$(cat ${config.sops.secrets.gh_token.path})
     export GITHUB_TOKEN=$(cat ${config.sops.secrets.github_token.path})
     export HOMEBREW_GITHUB_API_TOKEN=$(cat ${config.sops.secrets.github_token.path})
@@ -76,11 +73,6 @@
           return 1
           ;;
       esac
-    }
-
-    vlogin() {
-      local role=''${1:-vault-spx-dev}
-      vault login -method=oidc -path=okta role="$role"
     }
 
     forest() {
