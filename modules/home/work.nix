@@ -47,7 +47,7 @@
     }
 
     forest() {
-      local model
+      local model environment
       case "$1" in
         company)
           model="Company"
@@ -59,15 +59,30 @@
           model="Card"
           ;;
         *)
-          echo "Usage: forest <company|user|card> <id>"
+          echo "Usage: forest <company|user|card> <id> [production|trunk|demo]"
           return 1
           ;;
       esac
       if [[ -z "$2" ]]; then
-        echo "Usage: forest $1 <id>"
+        echo "Usage: forest $1 <id> [production|trunk|demo]"
         return 1
       fi
-      open "https://app.forestadmin.com/Spendesk/Production/Spendesk%20(Read)/data/$model/index/record/$model/$2/summary"
+      case "''${3:-production}" in
+        production)
+          environment="Production"
+          ;;
+        trunk)
+          environment="Trunk"
+          ;;
+        demo)
+          environment="Demo"
+          ;;
+        *)
+          echo "Usage: forest $1 $2 [production|trunk|demo]"
+          return 1
+          ;;
+      esac
+      open "https://app.forestadmin.com/Spendesk/$environment/Spendesk%20(Read)/data/$model/index/record/$model/$2/summary"
     }
   '';
 }
