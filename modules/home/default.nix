@@ -92,6 +92,8 @@
 
   home.file.".aerospace.toml".source = ../../config/aerospace/.aerospace.toml;
 
+  home.file.".claude/CLAUDE.md".source = ../../config/claude/CLAUDE.md;
+
   imports = [
     ./programs/bat.nix
     ./programs/git.nix
