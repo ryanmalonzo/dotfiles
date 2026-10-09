@@ -14,7 +14,6 @@
   extraCasks = [
     "postman"
     "tableplus"
-    "yubico-authenticator"
   ];
 
   dockApps = [
