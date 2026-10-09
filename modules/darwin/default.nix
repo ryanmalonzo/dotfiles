@@ -28,6 +28,7 @@
       KeyRepeat = 2;
       "com.apple.mouse.tapBehavior" = 1;
       AppleInterfaceStyle = "Dark";
+      NSAutomaticPeriodSubstitutionEnabled = false;
       NSAutomaticWindowAnimationsEnabled = false;
       NSDocumentSaveNewDocumentsToCloud = false;
     };
