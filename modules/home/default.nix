@@ -57,6 +57,7 @@
     tree
     tree-sitter
     uv
+    yq-go
   ];
 
   editorconfig = {
