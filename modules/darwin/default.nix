@@ -107,7 +107,6 @@
       "spotify"
       "tailscale-app"
       "yaak"
-      "zed"
     ];
   };
 }

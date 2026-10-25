@@ -20,7 +20,6 @@
     "/Applications/Brave Browser.app"
     "/Applications/Slack.app"
     "/Applications/Ghostty.app"
-    "/Applications/Zed.app"
     "/Applications/TablePlus.app"
     "/Applications/Spotify.app"
     "/System/Applications/System Settings.app"

@@ -22,7 +22,6 @@
     "/Applications/Discord.app"
     "/Applications/Spotify.app"
     "/Applications/Ghostty.app"
-    "/Applications/Zed.app"
     "/Applications/Tailscale.app"
     "/System/Applications/System Settings.app"
   ];
