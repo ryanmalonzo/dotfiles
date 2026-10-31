@@ -17,6 +17,7 @@
   ];
 
   dockApps = [
+    "/Applications/yab.app"
     "/Applications/Brave Browser.app"
     "/Applications/Slack.app"
     "/Applications/Ghostty.app"

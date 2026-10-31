@@ -107,6 +107,7 @@
       "spotify"
       "tailscale-app"
       "yaak"
+      "yetanotherbrowser/tap/yab"
     ];
   };
 }
