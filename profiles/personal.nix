@@ -18,7 +18,6 @@
   };
 
   dockApps = [
-    "/Applications/yab.app"
     "/Applications/Brave Browser.app"
     "/Applications/Discord.app"
     "/Applications/Spotify.app"
