@@ -25,6 +25,8 @@
   sops.secrets.lokalise_api_token = { sopsFile = "${self}/secrets/work.yaml"; };
   sops.secrets.npm_token = { sopsFile = "${self}/secrets/work.yaml"; };
 
+  programs.zsh.shellAliases.dbc = "db-connect";
+
   programs.zsh.initContent = ''
     export GH_TOKEN=$(cat ${config.sops.secrets.gh_token.path})
     export GITHUB_TOKEN=$(cat ${config.sops.secrets.github_token.path})
